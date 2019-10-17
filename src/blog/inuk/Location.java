@@ -11,3 +11,4 @@ public class Location {
 
     ArrayList<Item> items;
 }
+//
