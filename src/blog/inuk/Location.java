@@ -1,5 +1,7 @@
 package blog.inuk;
 
+import java.util.ArrayList;
+
 public class Location {
     /// Connecting locations
     Location north, south, east, west;
