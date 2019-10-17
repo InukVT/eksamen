@@ -3,11 +3,17 @@ package blog.inuk;
 import java.util.ArrayList;
 
 public class Location {
-    /// Connecting locations
-    Location north, south, east, west;
+    /** Name of location */
+    public String name;
 
-    /// Short description of the location for our traveler
+
+    /** A connecting location */
+    public Location north, south, east, west;
+
+    /** Short description of the location for our traveler */
     String description;
 
-    ArrayList<Item> items;
+    // Using ArrayList, so we can potentially have 1000 items in a room, no issue.
+    /** An array of all the items in the room */
+    public ArrayList<Item> items;
 }
