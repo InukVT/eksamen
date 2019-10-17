@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"blog.inuk","c":"Item","l":"Item()","url":"%3Cinit%3E()"},{"p":"blog.inuk","c":"Location","l":"Location()","url":"%3Cinit%3E()"}]
