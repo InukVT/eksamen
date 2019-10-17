@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blog/inuk/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blog/inuk/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog/inuk/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/inuk/Location.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +24,7 @@
   </component>
   <component name="ProjectId" id="1SJv6ALc7oilVoFtPrEEiBeAFw8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -66,6 +66,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="" />
@@ -93,7 +96,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

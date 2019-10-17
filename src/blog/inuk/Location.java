@@ -17,3 +17,4 @@ public class Location {
     /** An array of all the items in the room */
     public ArrayList<Item> items;
 }
+//
