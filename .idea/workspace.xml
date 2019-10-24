@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/genaret.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/Item.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/Item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/Location.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/Location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/docs/member-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/docs/package-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/docs/type-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blog/inuk/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/inuk/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog/inuk/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/inuk/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog/inuk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/inuk/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blog/inuk/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/inuk/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -68,23 +53,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="blog.inuk.Main" />
-      <module name="TextAdtenture" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="" />
@@ -92,7 +60,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571294334292</updated>
-      <workItem from="1571294335828" duration="5698000" />
+      <workItem from="1571294335828" duration="6255000" />
+      <workItem from="1571906377304" duration="1000000" />
     </task>
     <task id="LOCAL-00001" summary="Workspace change">
       <created>1571300627344</created>
@@ -122,7 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571302402189</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update location and item for better metadata">
+      <created>1571306712583</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571306712583</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added docs">
+      <created>1571306792876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571306792876</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +116,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -145,6 +130,8 @@
     <MESSAGE value="Updated to JDK 13" />
     <MESSAGE value="Initial Location meta data" />
     <MESSAGE value="Resolved an issue, where IntelliJ couldn't find &quot;ArrayList&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolved an issue, where IntelliJ couldn't find &quot;ArrayList&quot;" />
+    <MESSAGE value="Update location and item for better metadata" />
+    <MESSAGE value="Added docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added docs" />
   </component>
 </project>
