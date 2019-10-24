@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/genaret.sh" afterDir="false" />
+    <list default="true" id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="Init inventory management">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/Item.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/Item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/Location.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/Location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/blog/inuk/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/blog/inuk/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/docs/member-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/docs/package-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/docs/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog/inuk/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/inuk/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog/inuk/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/inuk/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog/inuk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blog/inuk/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,18 +18,27 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Bastian Inuk Christensen &lt;inuk@ruc.dk&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="ProjectId" id="1SJv6ALc7oilVoFtPrEEiBeAFw8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -108,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571302402189</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Init inventory management">
+      <created>1571909485547</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571909485547</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +129,7 @@
     <MESSAGE value="Updated to JDK 13" />
     <MESSAGE value="Initial Location meta data" />
     <MESSAGE value="Resolved an issue, where IntelliJ couldn't find &quot;ArrayList&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolved an issue, where IntelliJ couldn't find &quot;ArrayList&quot;" />
+    <MESSAGE value="Init inventory management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init inventory management" />
   </component>
 </project>
