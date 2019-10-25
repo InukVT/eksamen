@@ -1,1 +1,1 @@
-javadoc ../src/blog/inuk/*
+javadoc ../src/*

@@ -1,30 +1,29 @@
-package blog.inuk;
 
 import java.util.ArrayList;
 
 /** The player class
- * @author Bastian Inuk Christensen <inuk@ruc.dk>
+ * @author Bastian Inuk Christensen: inuk@ruc.dk
  * */
 public class Player {
     /** What the player carries */
-    public static ArrayList<Item> inventory;
+    public ArrayList<Item> inventory;
     /** Players health */
-    public static int hp;
+    public int hp;
     /** Name og Player */
-    public static String name;
+    public String name;
 
     /** How much the player can carry */
-    private static int carryWeight = 64;
+    private int carryWeight;
 
     /** Create a new player
-     * @param name Required for
-     * @see #toString()*/
+     * @param name Required for {@link #toString()} */
     public Player(String name){
+        this.carryWeight = 64;
         this.name = name;
     }
 
     /** Player represented as a String
-     *  <br><br>
+     *  <p>
      *  TODO: Find a better representation of player, like health
      *
      *  @return Players name, as that represent the player the best
@@ -38,7 +37,7 @@ public class Player {
 
     /** Adds an item to the players inventory, if the player can handle the weight. Returns true if successfull, otherwise false.
      *
-     * @param item The item to be added to the players inventory, only one inventory.
+     * @param item a {@link Item} to be added to the players {@link #inventory}.
      *
      * @return <code>true</code> if the item added <code>false</code> if the item is too heavy for the user, and thus can't be added.
      * */

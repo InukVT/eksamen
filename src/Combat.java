@@ -1,4 +1,3 @@
-package blog.inuk;
 import java.util.Random;
 
 public class Combat {
