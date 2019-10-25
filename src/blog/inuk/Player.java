@@ -2,24 +2,36 @@ package blog.inuk;
 
 import java.util.ArrayList;
 
-/** The player class */
+/** The player class
+ * @author Bastian Inuk Christensen <inuk@ruc.dk>
+ * */
 public class Player {
+    /** What the player carries */
     public static ArrayList<Item> inventory;
+    /** Players health */
     public static int hp;
+    /** Name og Player */
     public static String name;
 
     /** How much the player can carry */
     private static int carryWeight = 64;
 
-    /** Create a new player */
-    public Player(){
+    /** Create a new player
+     * @param name Required for
+     * @see #toString()*/
+    public Player(String name){
+        this.name = name;
     }
 
-    @Override
     /** Player represented as a String
-     *  @return Players name, as that represent the player the best
+     *  <br><br>
      *  TODO: Find a better representation of player, like health
+     *
+     *  @return Players name, as that represent the player the best
+     *
      *  */
+    @Override
+
     public String toString() {
         return name;
     }
