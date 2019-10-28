@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"blog.inuk","l":"Item"},{"p":"blog.inuk","l":"Location"},{"p":"blog.inuk","l":"Main"},{"p":"blog.inuk","l":"Player"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"Combat"},{"p":"<Unnamed>","l":"Enemy"},{"p":"<Unnamed>","l":"Item"},{"p":"<Unnamed>","l":"Location"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"Player"}]
