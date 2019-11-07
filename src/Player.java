@@ -64,11 +64,11 @@ public class Player {
     /** Drops item at index in inventory
      * @param item Where in <code>inventory</code> the item should be removed.
      * */
-    public static void dropItem(int item){
-       inventory.remove(item);
+    public void dropItem(int item){
+       this.inventory.remove(item);
     }
 
-    /** @return a list of {@link Item} the user is carrying. */
+    /** @return a list of {@link Item} the user is carrying. AKA the Inventory */
     public ArrayList<Item> getInventory() {
         return inventory;
     }
@@ -76,13 +76,13 @@ public class Player {
     /** Calculates weather the player can carry the passed in item
      * @param itemToAdd the item to calculate if is light enough to be added to the inventory
      * @return true if the item can be added, false if too heavy*/
-    private static boolean canCarry(Item itemToAdd){
+    private boolean canCarry(Item itemToAdd){
         int isCarrying = 0;
-        for (Item item : inventory){
+        for (Item item : this.inventory){
             isCarrying += item.weight;
 
         }
-        if(isCarrying + itemToAdd.weight <= carryWeight){
+        if(isCarrying + itemToAdd.weight <= this.carryWeight){
             return true;
         }
         return false;
