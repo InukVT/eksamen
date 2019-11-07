@@ -3,14 +3,12 @@ import java.util.ArrayList;
 /** The player class
  * @author Bastian Inuk Christensen: inuk@ruc.dk
  * */
-public class Player {
+public class Player extends Creature {
 
     /** What the player carries */
     private ArrayList<Item> inventory;
-    /** Players health */
-    private int hp;
 
-    /** Name og Player */
+    /** Name of Player */
     public String name;
 
     /** How much the player can carry */
@@ -19,9 +17,9 @@ public class Player {
     /** Create a new player
      * @param name Required for {@link #toString()} */
     public Player(String name){
+        super(20);
         this.carryWeight = 64;
         this.name = name;
-        this.hp = 20;
     }
 
     /** Player represented as a String
@@ -36,16 +34,7 @@ public class Player {
         return name;
     }
 
-    /** @return {@link #hp}*/
-    public int getHp() {
-        return hp;
-    }
 
-    /** Damage player
-     *  @param amount the amount of health point to remove from the player*/
-    public void damage(int amount){
-        this.hp -= amount;
-    }
 
     /** Adds an item to the players inventory, if the player can handle the weight. Returns true if successfull, otherwise false.
      *
