@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="Init inventory management">
+    <list default="true" id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="Made it so that HP is private">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,10 +36,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -82,6 +91,7 @@
       <updated>1571294334292</updated>
       <workItem from="1571294335828" duration="254000" />
       <workItem from="1571300373303" duration="1540000" />
+      <workItem from="1573111135006" duration="6390000" />
     </task>
     <task id="LOCAL-00003" summary="Initial Location meta data">
       <created>1571302239613</created>
@@ -104,11 +114,77 @@
       <option name="project" value="LOCAL" />
       <updated>1571909485547</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Made it so we don't always have to &quot;choose theirs&quot; on pulls">
+      <created>1571909797899</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571909797899</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed typo in gitignore">
+      <created>1571909872745</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571909872745</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Various improvement to Player class and doc regen">
+      <created>1572003021902</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572003021902</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Player class doc improvement">
+      <created>1572003772773</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572003772773</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Player class doc improvement and restructure of files">
+      <created>1572004844264</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572004844264</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Made it so that HP is private">
+      <created>1572007045579</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572007045579</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Subclassed Player to Creature">
+      <created>1573121829968</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573121829968</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Extends enemy to Creature">
+      <created>1573121882925</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573121882925</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -130,6 +206,14 @@
     <MESSAGE value="Initial Location meta data" />
     <MESSAGE value="Resolved an issue, where IntelliJ couldn't find &quot;ArrayList&quot;" />
     <MESSAGE value="Init inventory management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init inventory management" />
+    <MESSAGE value="Made it so we don't always have to &quot;choose theirs&quot; on pulls" />
+    <MESSAGE value="Fixed typo in gitignore" />
+    <MESSAGE value="Various improvement to Player class and doc regen" />
+    <MESSAGE value="Player class doc improvement" />
+    <MESSAGE value="Player class doc improvement and restructure of files" />
+    <MESSAGE value="Made it so that HP is private" />
+    <MESSAGE value="Subclassed Player to Creature" />
+    <MESSAGE value="Extends enemy to Creature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extends enemy to Creature" />
   </component>
 </project>
