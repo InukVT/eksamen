@@ -1,6 +1,7 @@
 import java.util.Random;
 
 public class Combat {
+    // TODO: reference hitrate from weaps from item class
     public int hitRate() {
         int hitRate;
         Random random = new Random();
@@ -14,10 +15,22 @@ public class Combat {
      * @param sender the {@link Creature} attacking
      * @return
      */
-    public Creature hit(Creature receiver, Creature sender) {
-        int damage = sender.equip.damage + hitRate() - receiver.getDefence();
-        receiver.damage(damage);
-        return receiver;
+    public int hit(Creature receiver, Creature sender) {
+       int hitRate = hitRate();
+       int defRate = hitRate();
+       if (hitRate > defRate) {
+           int dmgDealt = sender.equip.damage;
+           System.out.println("You've dealt " + dmgDealt + "damage");
+           return sender.equip.damage;
+
+       } else if (hitRate == defRate) {
+           int dmgDealt = 2/sender.equip.damage;
+           System.out.println("You've dealt " + dmgDealt + " damage");
+           return dmgDealt;
+       } else if (hitRate < defRate) {
+           System.out.println("You missed");
+           return 0;
+       }
     }
 
     /** The combat loop */
