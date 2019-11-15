@@ -4,8 +4,48 @@ public class Main {
 
 
     public static void main(String[] args) {
-        /*start.north = northFromStart;
-        start.west = westFromStart;*/
+        Item items = new Item();
+        Location.start.north = Location.roomA;
+        Location.start.west = Location.roomB;
+        Location.start.south = Location.roomH;
+
+        Location.roomB.west = Location.keyRoom;
+        Location.roomB.east = Location.start;
+        Location.keyRoom.east = Location.roomB;
+
+        Location.roomA.south = Location.start;
+        Location.roomA.east = Location.roomC;
+
+        Location.roomC.east = Location.roomD;
+        Location.roomC.west = Location.roomA;
+
+        Location.roomD.west = Location.roomC;
+        Location.roomD.south = Location.roomE;
+        Location.roomD.north = Location.roomF;
+
+        Location.roomE.north = Location.roomD;
+
+        Location.roomF.south = Location.roomD;
+        Location.roomF.north = Location.roomG;
+
+        Location.roomG.south = Location.roomF;
+        Location.roomG.east = Location.bossRoom;
+
+        Location.bossRoom.west = Location.roomG;
+
+        Location.roomH.north = Location.start;
+        Location.roomH.east = Location.roomI;
+
+        Location.roomI.west = Location.roomH;
+        Location.roomI.south = Location.roomJ;
+
+        Location.roomJ.north = Location.roomI;
+        Location.roomJ.east = Location.potionRoom;
+
+        Location.potionRoom.west = Location.roomJ;
+        Location.potionRoom.south = Location.miniBossRoom;
+
+        Location.miniBossRoom.north = Location.potionRoom;
 
         // TODO: Ask user for name, handle exceptions
         String name = "John";
