@@ -21,8 +21,27 @@ public class Location {
     static Location roomI = new Location("East from roomH", "You're now in room I");
     static Location roomJ = new Location("South from roomI", "You're now in room J");
 
-
-
+    @Override
+    public String toString() {
+        String toPrint = "";
+        if(west != null){
+            // whats westwards
+            toPrint = toPrint + "westwards of here is " + west.name;
+        }
+        if(east != null){
+            // whats westwards
+            toPrint = toPrint + "eastwards of here is " + east.name;
+        }
+        if(north != null){
+            // whats westwards
+            toPrint = toPrint + "westwards of here is " + north.name;
+        }
+        if(south != null){
+            // whats westwards
+            toPrint = toPrint + "westwards of here is " + west.name;
+        }
+        return toPrint;
+    }
 
     /** A connecting location */
     public Location north, south, east, west;
