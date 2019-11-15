@@ -1,9 +1,16 @@
 public class Creature {
-    /** Players health */
+    /** Equipped weapon for use in combat */
+    public Item equip;
+
+    /** Creatures HP */
     private int hp;
 
-    public Creature(int hp){
+    /** Creatures defense */
+    private int defence;
+
+    public Creature(int hp, int defence){
         this.hp = hp;
+        this.defence = defence;
     }
 
     /** @return {@link #hp}*/
