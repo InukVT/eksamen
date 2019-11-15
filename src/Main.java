@@ -17,4 +17,9 @@ public class Main {
     private static String playerInfoString(int hp, String name) {
         return String.format("Hello %s, you currently have %i HP", name, hp);
     }
+
+    /** Convenience function over std out */
+    public static void println(String toPrint){
+        System.out.println(toPrint);
+    }
 }

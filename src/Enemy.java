@@ -1,6 +1,6 @@
 /** Enemy class */
 public class Enemy extends Creature {
-    public Enemy(int hp, int def){
-        super(hp, def);
+    public Enemy(String name, int hp, int def){
+        super(name, hp, def);
     }
 }
