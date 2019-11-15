@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="">
+    <list default="true" id="f1b9a899-d60f-4731-a337-f8889590d994" name="Default Changelist" comment="Made it so that HP is private">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Combat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
@@ -64,9 +64,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="blog.inuk.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TextAdtenture" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -171,7 +170,28 @@
       <option name="project" value="LOCAL" />
       <updated>1573121882925</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Made room relations">
+      <created>1573812589956</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573812589956</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added items">
+      <created>1573813356361</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573813356361</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Made Items more modular">
+      <created>1573814210654</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573814210654</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +235,9 @@
     <MESSAGE value="Made it so that HP is private" />
     <MESSAGE value="Subclassed Player to Creature" />
     <MESSAGE value="Extends enemy to Creature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extends enemy to Creature" />
+    <MESSAGE value="Made room relations" />
+    <MESSAGE value="Added items" />
+    <MESSAGE value="Made Items more modular" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Items more modular" />
   </component>
 </project>
