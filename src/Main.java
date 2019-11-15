@@ -4,6 +4,7 @@ public class Main {
 
 
     public static void main(String[] args) {
+        Item items = new Item();
         Location.start.north = Location.roomA;
         Location.start.west = Location.roomB;
         Location.start.south = Location.roomH;
