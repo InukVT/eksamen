@@ -4,8 +4,9 @@ public class Main {
 
 
     public static void main(String[] args) {
-        /*start.north = northFromStart;
-        start.west = westFromStart;*/
+        Location.start.north = Location.roomA;
+        Location.start.west = Location.roomB;
+        
 
         // TODO: Ask user for name, handle exceptions
         String name = "John";
