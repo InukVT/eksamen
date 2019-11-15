@@ -15,7 +15,7 @@ public class Combat {
      * @return
      */
     public Creature hit(Creature receiver, Creature sender) {
-        int damage = sender.equip.damage - hitRate() - receiver.getDefence();
+        int damage = sender.equip.damage + hitRate() - receiver.getDefence();
         receiver.damage(damage);
         return receiver;
     }
