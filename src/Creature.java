@@ -9,22 +9,15 @@ public class Creature {
     /** Creatures HP */
     private int hp;
 
-    /** Creatures defense */
-    private int defence;
 
-    public Creature(String name, int hp, int defence){
+    public Creature(String name, int hp){
         this.name = name;
         this.hp = hp;
-        this.defence = defence;
     }
 
     /** @return {@link #hp}*/
     public int getHp() {
         return hp;
-    }
-
-    public int getDefence() {
-        return defence;
     }
 
     public String getName() {
