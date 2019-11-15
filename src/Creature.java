@@ -1,3 +1,4 @@
+/** Generic creatures class */
 public class Creature {
     /** Equipped weapon for use in combat */
     public Item equip;

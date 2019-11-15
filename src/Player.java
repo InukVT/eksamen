@@ -17,7 +17,7 @@ public class Player extends Creature {
     /** Create a new player
      * @param name Required for {@link #toString()} */
     public Player(String name){
-        super(20);
+        super(20, 10);
         this.carryWeight = 64;
         this.name = name;
     }

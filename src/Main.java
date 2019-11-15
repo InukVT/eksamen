@@ -1,3 +1,5 @@
+
+/** Game class, this is where the game is run */
 public class Main {
     static Location start = new Location("Start", "You're at a new place, you don't know what happened");
     static Location northToStart = new Location("North to South", "You moved north");
