@@ -8,16 +8,13 @@ public class Player extends Creature {
     /** What the player carries */
     private ArrayList<Item> inventory;
 
-    /** Name of Player */
-    public String name;
-
     /** How much the player can carry */
     private int carryWeight;
 
     /** Create a new player
      * @param name Required for {@link #toString()} */
     public Player(String name){
-        super(20);
+        super(name, 20, 10);
         this.carryWeight = 64;
         this.name = name;
     }
