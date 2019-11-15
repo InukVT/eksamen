@@ -6,6 +6,7 @@ public class Combat {
         Random random = new Random();
         hitRate = random.nextInt(20) + 1;
         return hitRate;
+
     }
 
     /** Returns creature
@@ -15,10 +16,16 @@ public class Combat {
      * @return
      */
     public Creature hit(Creature receiver, Creature sender) {
-        int damage = sender.equip.damage - hitRate() - receiver.getDefence();
-        receiver.damage(damage);
+        int defRate = hitRate();
+        int hitRate = hitRate();
+        if (hitRate > defRate) {
+            receiver.damage( sender.equip.damage);
+        } else if (hitRate == defRate) {
+            receiver.damage(2/sender.equip.damage);
+        }
         return receiver;
     }
+
 
     /** The combat loop */
     public void combatLoop(Creature player, Creature enemy){
