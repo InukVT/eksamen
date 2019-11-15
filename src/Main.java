@@ -54,6 +54,11 @@ public class Main {
         Player player = new Player(name);
 
         println(playerInfoString(player.getHp(), player.name));
+
+        while (player.getHp() > 0){
+            // game
+        }
+        println("Game Over");
     }
 
     private static String playerInfoString(int hp, String name) {
