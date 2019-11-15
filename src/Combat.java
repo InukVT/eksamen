@@ -7,4 +7,9 @@ public class Combat {
         hitRate = random.nextInt(20) + 1;
         return hitRate;
     }
+
+    public Creature hit(Creature receiver, Creature sender) {
+        int damage = sender.equip.damage * hitRate();
+        return receiver;
+    }
 }
