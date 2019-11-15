@@ -8,8 +8,15 @@ public class Combat {
         return hitRate;
     }
 
+    /** Returns creature
+     * TODO: Make it return damage instead, and when called, call it from {@link Creature}
+     * @param receiver the {@link Creature} getting attacked
+     * @param sender the {@link Creature} attacking
+     * @return
+     */
     public Creature hit(Creature receiver, Creature sender) {
-        int damage = sender.equip.damage * hitRate();
+        int damage = sender.equip.damage - hitRate() - receiver.getDefence();
+        receiver.damage(damage);
         return receiver;
     }
 }

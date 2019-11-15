@@ -1,3 +1,5 @@
+
+/** Game class, this is where the game is run */
 public class Main {
 
 

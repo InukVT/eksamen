@@ -1,3 +1,4 @@
+/** Generic creatures class */
 public class Creature {
     /** Equipped weapon for use in combat */
     public Item equip;
@@ -16,6 +17,10 @@ public class Creature {
     /** @return {@link #hp}*/
     public int getHp() {
         return hp;
+    }
+
+    public int getDefence() {
+        return defence;
     }
 
     /** Damage player
