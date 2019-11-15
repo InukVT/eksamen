@@ -4,7 +4,9 @@ public class Main {
 
 
     public static void main(String[] args) {
+        // Generates all default items
         Item items = new Item();
+
         Location.start.north = Location.roomA;
         Location.start.west = Location.roomB;
         Location.start.south = Location.roomH;

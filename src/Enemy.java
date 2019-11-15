@@ -4,7 +4,7 @@ public class Enemy extends Creature {
         super(name, hp, def);
     }
 
-    static Enemy AngryMan = new Enemy ("Angry Man", 60, )
+    static Enemy AngryMan = new Enemy ("Angry Man", 60);
 
 }
 
