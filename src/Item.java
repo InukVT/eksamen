@@ -7,19 +7,28 @@ public class Item {
     // Bare hand, Stick, plunger, swordfish & flail
     public ArrayList<Item> weapons = new ArrayList<Item>();
     public void generateAllItems() {
-        weapons.add(new Item("Bare hands", 0, 1));
-        weapons.add(new Item("Stick",0,2));
-        weapons.add(new Item("Plunger", 0, 4));
-        weapons.add(new Item("Swordfish", 0, 4));
-        weapons.add(new Item("Flail", 0, 6));
+        weapons.add(new Item("Bare hands", 0, 1, true));
+        weapons.add(new Item("Stick",0,2, true));
+        weapons.add(new Item("Plunger", 0, 4, true));
+        weapons.add(new Item("Swordfish", 0, 4, true));
+        weapons.add(new Item("Flail", 0, 6, true));
+        weapons.add(new Item("potion", 0, 0, false));
+        
     }
     Item(){
         generateAllItems();
     }
-    Item(String name, int weight, int damage) {
+    Item(String name, int weight, int amount, boolean isWeapon) {
         this.name = name;
         this.weight = weight;
-        this.damage = damage;
+
+        if (isWeapon){
+            this.damage = amount;
+        }
+        else {
+            this.heal = amount;
+        }
+
     }
 
 
@@ -30,4 +39,6 @@ public class Item {
     public  int weight;
 
     public int damage;
+
+    public int heal;
 }
