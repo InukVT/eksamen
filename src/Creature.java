@@ -19,6 +19,10 @@ public class Creature {
         return hp;
     }
 
+    public int getDefence() {
+        return defence;
+    }
+
     /** Damage player
      *  @param amount the amount of health point to remove from the player*/
     public void damage(int amount){
