@@ -6,6 +6,7 @@ public class Player extends Creature {
 
     /** What the player carries */
     private ArrayList<Item> inventory;
+    private Boolean key = false;
 
     public Location currentLocation;
 
@@ -41,7 +42,25 @@ public class Player extends Creature {
     public void appendInventory(Item item){
             this.inventory.add(item);
     }
-    public void controls () {
+
+    public void pickup (Item item){
+        Scanner Controls = new Scanner(System.in);
+        char ctrl = Controls.next().charAt(0);
+        switch (ctrl){
+            case 'y':
+                key = true;
+                Main.println("You picked up a key");
+                break;
+            case 'n':
+                Main.println("You let the key be");
+                break;
+            default:
+                Main.println("Illegal move");
+        }
+    }
+
+
+    public void move() {
         Scanner Controls = new Scanner(System.in);
         char ctrl = Controls.next().charAt(0);
         switch (ctrl) {
@@ -57,8 +76,10 @@ public class Player extends Creature {
             case 'n':
                 this.movePlayer(currentLocation, "north");
                 break;
-            case 'g':
-                this
+            case 'p':
+                // use potion
+            default:
+                Main.println("Illegal move");
         }
 
 
@@ -73,10 +94,19 @@ public class Player extends Creature {
 
     public void movePlayer(Location location, String dir){
         if(location.dirExists(dir)) {
-            // TODO: Add enemy encounter logic here
-            this.currentLocation = location.stringToDir(dir);
-            Main.println("You are now in " + this.currentLocation.toString());
-
+            if(location.stringToDir(dir)==Location.bossRoom){
+                Main.println("You've encountered the boss room");
+                if(key){
+                   this.currentLocation = location.stringToDir(dir);
+                }
+                else {
+                    Main.println("You need the key to unlock the boss room");
+                }
+            }else {
+                // TODO: Add enemy encounter logic here
+                this.currentLocation = location.stringToDir(dir);
+                Main.println("You are now in " + this.currentLocation.toString());
+            }
         }else{
         Main.println("That direction doesn't exist, you're still in " + location.name);}
     }

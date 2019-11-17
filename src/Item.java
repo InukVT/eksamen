@@ -7,7 +7,7 @@ public class Item {
     
     public ArrayList<Item> weapons = new ArrayList<Item>();
     public ArrayList<Item> potions = new ArrayList<Item>();
-    public ArrayList<Item> keys = new ArrayList<Item>();
+    static public ArrayList<Item> keys = new ArrayList<Item>();
     public void generateAllItems() {
         weapons.add(new Item("Bare hands", 1, true));
         weapons.add(new Item("Stick",2, true));
