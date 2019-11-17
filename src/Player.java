@@ -69,7 +69,9 @@ public class Player extends Creature {
 
     public void move() {
         Scanner Controls = new Scanner(System.in);
-        String string = Controls.next();
+        // Stores the scanned string as all lowercase, to be case incensitive
+        String string = Controls.next().toLowerCase();
+        // Checks if the inputted text is more than a character
         if (string.length() > 1){
             Main.println("You've got too many characters");
         }else {
