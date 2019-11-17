@@ -54,10 +54,13 @@ public class Location {
     public Location(String name, String description) {
         this.name = name;
         this.description = description;
+        this.key = false;
     }
     // Using ArrayList, so we can potentially have 1000 items in a room, no issue.
     /** An array of all the items in the room */
-    public ArrayList<Item> items;
+    public Item item;
+    public Boolean key;
+    public ArrayList<Item> potions;
 
     /** Checks to see if there's a room in the given direction */
     public boolean dirExists(String dir){
@@ -121,6 +124,9 @@ public class Location {
         Location.potionRoom.south = Location.miniBossRoom;
 
         Location.miniBossRoom.north = Location.potionRoom;
+
+
+        Location.keyRoom.key = true;
     }
 }
 //

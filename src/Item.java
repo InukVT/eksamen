@@ -10,7 +10,7 @@ public class Item {
     }
     public ArrayList<Item> weapons = new ArrayList<Item>();
     public ArrayList<Item> potions = new ArrayList<Item>();
-    public ArrayList<Item> keys = new ArrayList<Item>();
+    static public Item key = new Item("Key", 0, false);
     public void generateAllItems() {
         weapons.add(new Item("Bare hands", 1, true));
         weapons.add(new Item("Stick",2, true));
@@ -18,8 +18,6 @@ public class Item {
         weapons.add(new Item("Swordfish", 4, true));
         weapons.add(new Item("Flail", 6, true));
         potions.add(new Item("potion", 0, false));
-        keys.add(new Item("Key", 0, false));
-        
     }
     Item(){
         generateAllItems();
