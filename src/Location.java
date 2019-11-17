@@ -59,15 +59,8 @@ public class Location {
 
     /** Checks to see if there's a room in the given direction */
     public boolean dirExists(String dir){
-        switch (dir) {
-            case "north":
-                return north != null;
-            case "south":
-                return south != null;
-            case "west":
-                return west != null;
-            case "east":
-                return east != null;
+        if(stringToDir(dir)!=null){
+            return true;
         }
         return false;
     }
@@ -83,6 +76,49 @@ public class Location {
                 return east ;
         }
         return this;
+    }
+    public Location () {
+        Location.start.north = Location.roomA;
+        Location.start.west = Location.roomB;
+        Location.start.south = Location.roomH;
+
+        Location.roomB.west = Location.keyRoom;
+        Location.roomB.east = Location.start;
+        Location.keyRoom.east = Location.roomB;
+
+        Location.roomA.south = Location.start;
+        Location.roomA.east = Location.roomC;
+
+        Location.roomC.east = Location.roomD;
+        Location.roomC.west = Location.roomA;
+
+        Location.roomD.west = Location.roomC;
+        Location.roomD.south = Location.roomE;
+        Location.roomD.north = Location.roomF;
+
+        Location.roomE.north = Location.roomD;
+
+        Location.roomF.south = Location.roomD;
+        Location.roomF.north = Location.roomG;
+
+        Location.roomG.south = Location.roomF;
+        Location.roomG.east = Location.bossRoom;
+
+        Location.bossRoom.west = Location.roomG;
+
+        Location.roomH.north = Location.start;
+        Location.roomH.east = Location.roomI;
+
+        Location.roomI.west = Location.roomH;
+        Location.roomI.south = Location.roomJ;
+
+        Location.roomJ.north = Location.roomI;
+        Location.roomJ.east = Location.potionRoom;
+
+        Location.potionRoom.west = Location.roomJ;
+        Location.potionRoom.south = Location.miniBossRoom;
+
+        Location.miniBossRoom.north = Location.potionRoom;
     }
 }
 //
