@@ -4,7 +4,12 @@ public class Enemy extends Creature {
         super(name, hp);
     }
 
-    static Enemy AngryMan = new Enemy ("Angry Man", 60);
+    /** special enemies */
+    static Enemy AngryMan = new Enemy ("Angry Man", 60); // mini boss
+    static Enemy Nurse = new Enemy ("Nurse", 50);
+    /** normal enemies */
+    static Enemy Goon = new Enemy("Goon", 15);
+
 
 }
 
