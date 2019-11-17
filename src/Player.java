@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Scanner;
 /** The player class
  * @author Bastian Inuk Christensen: inuk@ruc.dk
  * */
@@ -45,6 +45,12 @@ public class Player extends Creature {
             return true;
         }
         return false;
+    }
+    public void controls () {
+        Scanner Controls = new Scanner(System.in);
+        char ctrl = Controls.next().charAt(0);
+        
+
     }
 
     /** Drops item at index in inventory
