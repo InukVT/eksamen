@@ -44,8 +44,7 @@ public class Player extends Creature {
     }
 
     public void pickup (Location location){
-        Scanner Controls = new Scanner(System.in);
-        char ctrl = Controls.next().charAt(0);
+        char ctrl = input().charAt(0);
         switch (ctrl){
             case 'y':
                 if(location == Location.keyRoom){
@@ -65,12 +64,15 @@ public class Player extends Creature {
                 Main.println("Illegal move");
         }
     }
-
+    public String input(){
+        Scanner scanner = new Scanner(System.in);
+        // Stores the scanned string as all lowercase, to be case incensitive
+        return scanner.next().toLowerCase();
+    }
 
     public void move() {
-        Scanner Controls = new Scanner(System.in);
-        // Stores the scanned string as all lowercase, to be case incensitive
-        String string = Controls.next().toLowerCase();
+
+        String string = input();
         // Checks if the inputted text is more than a character
         if (string.length() > 1){
             Main.println("You've got too many characters");
