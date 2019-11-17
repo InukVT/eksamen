@@ -59,15 +59,8 @@ public class Location {
 
     /** Checks to see if there's a room in the given direction */
     public boolean dirExists(String dir){
-        switch (dir) {
-            case "north":
-                return north != null;
-            case "south":
-                return south != null;
-            case "west":
-                return west != null;
-            case "east":
-                return east != null;
+        if(stringToDir(dir)!=null){
+            return true;
         }
         return false;
     }

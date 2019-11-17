@@ -8,6 +8,8 @@ public class Player extends Creature {
     /** What the player carries */
     private ArrayList<Item> inventory;
 
+    public Location currentLocation;
+
     /** How much the player can carry */
     private int carryWeight;
 
@@ -17,6 +19,7 @@ public class Player extends Creature {
         super(name, 20);
         this.carryWeight = 64;
         this.name = name;
+        this.currentLocation = Location.start;
     }
 
     /** Player represented as a String
@@ -74,13 +77,12 @@ public class Player extends Creature {
         return false;
     }
 
-    public Location movePlayer(Location location, String dir){
+    public void movePlayer(Location location, String dir){
         if(location.dirExists(dir)) {
             Main.println("You are now in " + location.toString());
             // TODO: Add enemy encounter logic here
-            return location.stringToDir(dir);
+            this.currentLocation = location.stringToDir(dir);
         }
         Main.println("That direction doesn't exist, you're still in " + location.name);
-        return location;
     }
 }
