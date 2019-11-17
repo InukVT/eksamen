@@ -65,24 +65,32 @@ public class Player extends Creature {
 
     public void move() {
         Scanner Controls = new Scanner(System.in);
-        char ctrl = Controls.next().charAt(0);
-        switch (ctrl) {
-            case 'e':
-                this.movePlayer(currentLocation, "east");
-                break;
-            case 'w':
-                this.movePlayer(currentLocation, "west");
-                break;
-            case 's':
-                this.movePlayer(currentLocation, "south");
-                break;
-            case 'n':
-                this.movePlayer(currentLocation, "north");
-                break;
-            case 'p':
-                // use potion
-            default:
-                Main.println("Illegal move");
+        String string = Controls.next();
+        if(string.length() > 1){
+
+            Main.println("Too many characters, only single letters");
+        }
+        else {
+            char ctrl = string.charAt(0);
+            switch (ctrl) {
+                case 'e':
+                    this.movePlayer(currentLocation, "east");
+                    break;
+                case 'w':
+                    this.movePlayer(currentLocation, "west");
+                    break;
+                case 's':
+                    this.movePlayer(currentLocation, "south");
+                    break;
+                case 'n':
+                    this.movePlayer(currentLocation, "north");
+                    break;
+                case 'p':
+                    // use potion
+                    // If none other key is keyed, this is what happens
+                default:
+                    Main.println("Illegal move");
+            }
         }
 
 
