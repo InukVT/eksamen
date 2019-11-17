@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/** The player class
+ * */
 public class Player extends Creature {
 
     /** What the player carries */
