@@ -5,11 +5,11 @@ public class Enemy extends Creature {
     }
 
     /** special enemies */
-    static Enemy AngryMan = new Enemy ("Angry Man", 60); // mini boss
-    static Enemy Nurse = new Enemy ("Nurse", 50);
-    static Enemy VeryAngryMan = new Enemy("Very Angry Man", 70);
+    static Enemy AngryMan = new Enemy ("Angry Man", 60); // Mini Boss
+    static Enemy Nurse = new Enemy ("Nurse", 50); // Boss for potions
+    static Enemy VeryAngryMan = new Enemy("Very Angry Man", 70); //Boss
     /** normal enemies */
-    static Enemy Goon = new Enemy("Goon", 15);
+    static Enemy Goon = new Enemy("Goon", 15); // Normal enemies
 
 
 }
