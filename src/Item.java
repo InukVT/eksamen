@@ -4,10 +4,7 @@ public class Item {
     /**
      * Items name
      */
-    public int Potion () {
-        int potion = 20;
-        return potion;
-    }
+
     public ArrayList<Item> weapons = new ArrayList<Item>();
     public ArrayList<Item> potions = new ArrayList<Item>();
     public void generateAllItems() {
@@ -16,7 +13,6 @@ public class Item {
         weapons.add(new Item("Plunger", 4, true));
         weapons.add(new Item("Swordfish", 4, true));
         weapons.add(new Item("Flail", 6, true));
-        potions.add(new Item("potion", 0, false));
     }
     Item(){
         generateAllItems();
