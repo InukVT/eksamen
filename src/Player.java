@@ -69,32 +69,38 @@ public class Player extends Creature {
 
     public void move() {
         Scanner Controls = new Scanner(System.in);
-        char ctrl = Controls.next().charAt(0);
-        switch (ctrl) {
-            case 'e':
-                this.movePlayer(currentLocation, "east");
-                break;
-            case 'w':
-                this.movePlayer(currentLocation, "west");
-                break;
-            case 's':
-                this.movePlayer(currentLocation, "south");
-                break;
-            case 'n':
-                this.movePlayer(currentLocation, "north");
-                break;
-            case 'p':
-                if (potions > 0) {
-                    if(50 - getHp() < 20){
-                        this.hp(50-getHp());
-                    }else{
-                    this.hp(20);}
-                }else {
-                    Main.println("You don't have potions");
-                }
-                break;
-            default:
-                Main.println("Illegal move");
+        String string = Controls.next();
+        if (string.length() > 1){
+            Main.println("You've got too many characters");
+        }else {
+            char ctrl = string.charAt(0);
+            switch (ctrl) {
+                case 'e':
+                    this.movePlayer(currentLocation, "east");
+                    break;
+                case 'w':
+                    this.movePlayer(currentLocation, "west");
+                    break;
+                case 's':
+                    this.movePlayer(currentLocation, "south");
+                    break;
+                case 'n':
+                    this.movePlayer(currentLocation, "north");
+                    break;
+                case 'p':
+                    if (potions > 0) {
+                        if (50 - getHp() < 20) {
+                            this.hp(50 - getHp());
+                        } else {
+                            this.hp(20);
+                        }
+                    } else {
+                        Main.println("You don't have potions");
+                    }
+                    break;
+                default:
+                    Main.println("Illegal move");
+            }
         }
 
 
