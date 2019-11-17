@@ -37,9 +37,9 @@ public class Main {
                     println("There's x5 potions, pick it up? y/n");
                     player.pickup(Location.potionRoom);
                 }
-
-                Main.println("Your HP is currently " + player.getHp() + ". Press P to use potions (+20 HP)");
-
+                if (player.potions > 0 && player.getHp() < 50) {
+                    Main.println("Your HP is currently " + player.getHp() + ". Press P to use potions (+20 HP)");
+                }
                 if (player.currentLocation.north != null) {
                     println("Press (N) to move north");
                 }

@@ -3,7 +3,7 @@ import java.util.Scanner;
 /** The player class
  * */
 public class Player extends Creature {
-    private int potions = 0;
+    public int potions = 0;
     /** What the player carries */
     private ArrayList<Item> inventory;
     private Boolean key = false;
