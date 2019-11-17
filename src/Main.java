@@ -25,8 +25,11 @@ public class Main {
             if(player.currentLocation.key == true){
                 println("There's a key in the room, pick it up? y/n");
                 player.pickup(Location.keyRoom);
+            }else if (player.currentLocation.potions > 0) {
+                println("There's x5 potions, pick it up? y/n");
+                player.pickup(Location.potionRoom);
             }
-            Main.println("Press n to move north, press w to move west, s to south and e to east");
+            Main.println("Press n to move north, press w to move west, s to south and e to east" + " your HP is currently " + player.getHp() + " press P to use potions to regain up to 20HP");
             player.move();
         }
     }

@@ -52,6 +52,10 @@ public class Player extends Creature {
                     key = true;
                     location.key = false;
                     Main.println("You picked up a key");
+                } else if (location == location.potionRoom) {
+                    potions = location.potions;
+                    location.potions = 0;
+                    Main.println("You picked up the potions!");
                 }
                 break;
             case 'n':
