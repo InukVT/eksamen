@@ -8,4 +8,6 @@ typeset:
 	  --to           latex        \
 	  --template     template.tex \
 	  --out          report.pdf   \
+	  --pdf-engine   xelatex      \
+	  --bibliography bib.bib      \
 	  $(FILES)
