@@ -38,7 +38,13 @@ public class Combat {
     public void combatLoop(Player player,Enemy enemy){
         Main.println(String.format("You've encountered %s, they have %d health, and you have %d. What are you going to do?", enemy.getName(), enemy.getHp(), player.getHp()));
         while (player.getHp() > 0 && enemy.getHp() > 0){
-            hit(enemy, player);
+            Main.println("Want to use a potion? press (P) \nPress (A) to attack");
+            char ctrl = player.input().charAt(0);
+            switch (ctrl) {
+                case 'a':
+                    hit(enemy, player);
+                    break;
+            }
             hit(player, enemy);
 
         }

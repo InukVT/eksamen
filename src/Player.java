@@ -43,6 +43,8 @@ public class Player extends Creature {
             this.inventory.add(item);
     }
 
+
+
     public void pickup (Location location){
         char ctrl = input().charAt(0);
         switch (ctrl){
