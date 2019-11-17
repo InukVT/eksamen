@@ -6,13 +6,16 @@ public class Item {
      */
     // Bare hand, Stick, plunger, swordfish & flail
     public ArrayList<Item> weapons = new ArrayList<Item>();
+    public ArrayList<Item> potions = new ArrayList<Item>();
+    public ArrayList<Item> keys = new ArrayList<Item>();
     public void generateAllItems() {
         weapons.add(new Item("Bare hands", 1, true));
         weapons.add(new Item("Stick",2, true));
         weapons.add(new Item("Plunger", 4, true));
         weapons.add(new Item("Swordfish", 4, true));
         weapons.add(new Item("Flail", 6, true));
-        weapons.add(new Item("potion", 0, false));
+        potions.add(new Item("potion", 0, false));
+        keys.add(new Item("Key", 0, false));
         
     }
     Item(){
