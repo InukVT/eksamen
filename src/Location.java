@@ -55,6 +55,7 @@ public class Location {
     }
     // Using ArrayList, so we can potentially have 1000 items in a room, no issue.
     /** An array of all the items in the room */
+
     public ArrayList<Item> items;
 
     /** Checks to see if there's a room in the given direction */
