@@ -4,7 +4,10 @@ public class Item {
     /**
      * Items name
      */
-    
+    public int Potion () {
+        int potion = 20;
+        return potion;
+    }
     public ArrayList<Item> weapons = new ArrayList<Item>();
     public ArrayList<Item> potions = new ArrayList<Item>();
     public ArrayList<Item> keys = new ArrayList<Item>();
