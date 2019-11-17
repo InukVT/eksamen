@@ -14,10 +14,15 @@ public class Main {
 
         println(playerInfoString(player.getHp(), player.name));
 
+        gameLoop(player);
+
+        println("Game Over");
+    }
+
+    private static void gameLoop(Creature player){
         while (player.getHp() > 0 && Enemy.VeryAngryMan.getHp() > 0){
             // game
         }
-        println("Game Over");
     }
 
     private static String playerInfoString(int hp, String name) {
