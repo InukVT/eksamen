@@ -37,6 +37,7 @@ public class Main {
                     println("There's x5 potions, pick it up? y/n");
                     player.pickup(Location.potionRoom);
                 }
+                // TODO: if statement
                 Main.println("Press n to move north, press w to move west, s to south and e to east" + " your HP is currently " + player.getHp() + " press P to use potions to regain up to 20HP");
                 player.move();
             }
