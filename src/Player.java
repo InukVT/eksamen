@@ -84,10 +84,17 @@ public class Player extends Creature {
                     break;
                 case 'n':
                     this.movePlayer(currentLocation, "north");
-                    break;
+                    break
                 case 'p':
-                    // use potion
-                    // If none other key is keyed, this is what happens
+                    if (potions > 0) {
+                        if(50 - getHp() < 20){
+                            this.hp(50-getHp());
+                        }else{
+                            this.hp(20);}
+                    }else {
+                        Main.println("You don't have potions");
+                    }
+                    break;
                 default:
                     Main.println("Illegal move");
             }
