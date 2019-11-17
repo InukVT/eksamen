@@ -2,10 +2,12 @@ import java.util.Random;
 
 public class Combat {
     // TODO: reference hitrate from weaps from item class
-    public int hitRate() {
+    public int hitRate(Item item) {
         int hitRate;
         Random random = new Random();
-        hitRate = random.nextInt(20) + 1;
+
+        hitRate = random.nextInt(item.accuracy);
+
         return hitRate;
     }
 
@@ -16,8 +18,9 @@ public class Combat {
      * @return
      */
     public void hit(Creature receiver, Creature sender) {
-       int hitRate = hitRate();
-       int defRate = hitRate();
+       int hitRate = hitRate(sender.equip);
+       // This weapon has a 1/6 change of hitting, therefor this is chosen
+       int defRate = hitRate(Item.generateAllItems().get(0));
        if (hitRate > defRate) {
            int dmgDealt = sender.equip.damage;
            System.out.println(sender.name + " dealt " + dmgDealt + "damage");
