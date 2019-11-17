@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         // Generates all default items
         Item items = new Item();
-
+        Location locations = new Location();
 
         // TODO: Ask user for name, handle exceptions
         String name = "John";
@@ -19,9 +19,10 @@ public class Main {
         println("Game Over");
     }
 
-    private static void gameLoop(Creature player){
+    private static void gameLoop(Player player){
         while (player.getHp() > 0 && Enemy.VeryAngryMan.getHp() > 0){
             // game
+            player.controls();
         }
     }
 

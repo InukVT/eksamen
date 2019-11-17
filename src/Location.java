@@ -10,36 +10,38 @@ public class Location {
     static Location potionRoom = new Location("East from roomJ", "You've found x5 healing potions");
     static Location miniBossRoom = new Location("South from potionRoom", "You've encountered Angry Man");
     /** normal rooms */
-    static Location roomA = new Location("North from StartingPoint", "You're now north from the starting point");
-    static Location roomB = new Location("West from StartingPoint", "You're not west from the starting point");
-    static Location roomC = new Location("East from roomA", "You're now in room C");
-    static Location roomD = new Location("East from roomC", "You're now in room D");
-    static Location roomE = new Location("South from roomD", "You're now in room E");
-    static Location roomF = new Location("North from roomD", "You're now in room F");
-    static Location roomG = new Location("North from roomF", "You're now in room G");
-    static Location roomH = new Location("South from StartingPoint", "You're now in room H");
-    static Location roomI = new Location("East from roomH", "You're now in room I");
-    static Location roomJ = new Location("South from roomI", "You're now in room J");
+    static Location roomA = new Location("room A", "You're now north from the starting point");
+    static Location roomB = new Location("room B", "You're not west from the starting point");
+    static Location roomC = new Location("room C", "You're now in room C");
+    static Location roomD = new Location("room D", "You're now in room D");
+    static Location roomE = new Location("room E", "You're now in room E");
+    static Location roomF = new Location("room F", "You're now in room F");
+    static Location roomG = new Location("room G", "You're now in room G");
+    static Location roomH = new Location("room H", "You're now in room H");
+    static Location roomI = new Location("room I", "You're now in room I");
+    static Location roomJ = new Location("room J", "You're now in room J");
 
     @Override
     public String toString() {
-        String toPrint = "";
+        String toPrint = this.name;
+        /*
         if(west != null){
             // whats westwards
-            toPrint = toPrint + "westwards of here is " + west.name;
+            toPrint = toPrint + west.name;
         }
         if(east != null){
             // whats westwards
-            toPrint = toPrint + "eastwards of here is " + east.name;
+            toPrint = toPrint + east.name;
         }
         if(north != null){
             // whats westwards
-            toPrint = toPrint + "westwards of here is " + north.name;
+            toPrint = toPrint + north.name;
         }
         if(south != null){
             // whats westwards
-            toPrint = toPrint + "westwards of here is " + west.name;
+            toPrint = toPrint + west.name;
         }
+         */
         return toPrint;
     }
 
