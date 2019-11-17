@@ -15,30 +15,32 @@ public class Combat {
      * @param sender the {@link Creature} attacking
      * @return
      */
-    public int hit(Creature receiver, Creature sender) {
+    public void hit(Creature receiver, Creature sender) {
        int hitRate = hitRate();
        int defRate = hitRate();
        if (hitRate > defRate) {
            int dmgDealt = sender.equip.damage;
-           System.out.println("You've dealt " + dmgDealt + "damage");
-           return sender.equip.damage;
-
+           System.out.println(sender.name + " dealt " + dmgDealt + "damage");
+           receiver.damage(dmgDealt);
        } else if (hitRate == defRate) {
            int dmgDealt = 2/sender.equip.damage;
-           System.out.println("You've dealt " + dmgDealt + " damage");
-           return dmgDealt;
+           System.out.println(sender.name + " dealt " + dmgDealt + " damage");
+           receiver.damage(dmgDealt);
        } else if (hitRate < defRate) {
-           System.out.println("You missed");
-           return 0;
+           System.out.println(sender.name + " missed");
        }
-       return 0;
     }
 
     /** The combat loop */
     public void combatLoop(Player player,Enemy enemy){
         Main.println(String.format("You've encountered %s, they have %d health, and you have %d. What are you going to do?", enemy.getName(), enemy.getHp(), player.getHp()));
         while (player.getHp() > 0 && enemy.getHp() > 0){
+            hit(enemy, player);
+            hit(player, enemy);
 
+        }
+        if(player.getHp()>0) {
+            Main.println("You've defeated " + enemy.name);
         }
     }
 }

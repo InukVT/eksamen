@@ -9,9 +9,8 @@ public class Main {
         Location locations = new Location();
 
         // TODO: Ask user for name, handle exceptions
-        String name = "John";
-        Player player = new Player(name);
-
+        String name = "Player";
+        Player player = new Player(name, items.weapons.get(0));
         println(playerInfoString(player.getHp(), player.name));
 
         gameLoop(player);
@@ -29,16 +28,18 @@ public class Main {
                     combat.combatLoop(player, player.currentLocation.enemy);
                 }
             }
-
-            if(player.currentLocation.key == true){
-                println("There's a key in the room, pick it up? y/n");
-                player.pickup(Location.keyRoom);
-            }else if (player.currentLocation.potions > 0) {
-                println("There's x5 potions, pick it up? y/n");
-                player.pickup(Location.potionRoom);
+            // Because the while loop doesn't stop exactly when player dies
+            if (player.getHp()>0) {
+                if (player.currentLocation.key == true) {
+                    println("There's a key in the room, pick it up? y/n");
+                    player.pickup(Location.keyRoom);
+                } else if (player.currentLocation.potions > 0) {
+                    println("There's x5 potions, pick it up? y/n");
+                    player.pickup(Location.potionRoom);
+                }
+                Main.println("Press n to move north, press w to move west, s to south and e to east" + " your HP is currently " + player.getHp() + " press P to use potions to regain up to 20HP");
+                player.move();
             }
-            Main.println("Press n to move north, press w to move west, s to south and e to east" + " your HP is currently " + player.getHp() + " press P to use potions to regain up to 20HP");
-            player.move();
         }
     }
 

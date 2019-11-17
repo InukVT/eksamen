@@ -13,9 +13,10 @@ public class Creature {
         hp += more;
     }
 
-    public Creature(String name, int hp){
+    public Creature(String name, int hp, Item equip){
         this.name = name;
         this.hp = hp;
+        this.equip = equip;
     }
 
     /** @return {@link #hp}*/

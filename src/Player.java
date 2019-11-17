@@ -13,8 +13,8 @@ public class Player extends Creature {
 
     /** Create a new player
      * @param name Required for {@link #toString()} */
-    public Player(String name){
-        super(name, 20);
+    public Player(String name, Item item){
+        super(name, 50, item);
         this.name = name;
         this.currentLocation = Location.start;
     }
