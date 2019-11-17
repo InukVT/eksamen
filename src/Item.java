@@ -4,7 +4,7 @@ public class Item {
     /**
      * Items name
      */
-    // Bare hand, Stick, plunger, swordfish & flail
+    
     public ArrayList<Item> weapons = new ArrayList<Item>();
     public ArrayList<Item> potions = new ArrayList<Item>();
     public ArrayList<Item> keys = new ArrayList<Item>();
