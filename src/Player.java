@@ -77,6 +77,7 @@ public class Player extends Creature {
     public Location movePlayer(Location location, String dir){
         if(location.dirExists(dir)) {
             Main.println("You are now in " + location.toString());
+            // TODO: Add enemy encounter logic here
             return location.stringToDir(dir);
         }
         Main.println("That direction doesn't exist, you're still in " + location.name);
