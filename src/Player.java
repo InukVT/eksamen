@@ -43,13 +43,16 @@ public class Player extends Creature {
             this.inventory.add(item);
     }
 
-    public void pickup (Item item){
+    public void pickup (Location location){
         Scanner Controls = new Scanner(System.in);
         char ctrl = Controls.next().charAt(0);
         switch (ctrl){
             case 'y':
-                key = true;
-                Main.println("You picked up a key");
+                if(location == Location.keyRoom){
+                    key = true;
+                    location.key = false;
+                    Main.println("You picked up a key");
+                }
                 break;
             case 'n':
                 Main.println("You let the key be");

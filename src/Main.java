@@ -22,9 +22,9 @@ public class Main {
     private static void gameLoop(Player player){
         while (player.getHp() > 0 && Enemy.VeryAngryMan.getHp() > 0){
             // game
-            if(player.currentLocation == Location.keyRoom){
+            if(player.currentLocation.key == true){
                 println("There's a key in the room, pick it up? y/n");
-                player.pickup(Location.keyRoom.);
+                player.pickup(Location.keyRoom);
             }
             Main.println("Press n to move north, press w to move west, s to south and e to east");
             player.move();
