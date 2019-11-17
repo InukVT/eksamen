@@ -3,7 +3,7 @@ import java.util.Scanner;
 /** The player class
  * */
 public class Player extends Creature {
-
+    private int potions = 0;
     /** What the player carries */
     private ArrayList<Item> inventory;
     private Boolean key = false;
@@ -80,7 +80,15 @@ public class Player extends Creature {
                 this.movePlayer(currentLocation, "north");
                 break;
             case 'p':
-                // use potion
+                if (potions > 0) {
+                    if(50 - getHp() < 20){
+                        this.hp(50-getHp());
+                    }else{
+                    this.hp(20);}
+                }else {
+                    Main.println("You don't have potions");
+                }
+                break;
             default:
                 Main.println("Illegal move");
         }

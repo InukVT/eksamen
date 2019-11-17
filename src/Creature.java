@@ -9,6 +9,9 @@ public class Creature {
     /** Creatures HP */
     private int hp;
 
+    public void hp(int more){
+        hp += more;
+    }
 
     public Creature(String name, int hp){
         this.name = name;
