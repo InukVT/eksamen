@@ -56,5 +56,33 @@ public class Location {
     // Using ArrayList, so we can potentially have 1000 items in a room, no issue.
     /** An array of all the items in the room */
     public ArrayList<Item> items;
+
+    /** Checks to see if there's a room in the given direction */
+    public boolean dirExists(String dir){
+        switch (dir) {
+            case "north":
+                return north != null;
+            case "south":
+                return south != null;
+            case "west":
+                return west != null;
+            case "east":
+                return east != null;
+        }
+        return false;
+    }
+    public Location stringToDir(String dir){
+        switch (dir) {
+            case "north":
+                return north ;
+            case "south":
+                return south;
+            case "west":
+                return west ;
+            case "east":
+                return east ;
+        }
+        return this;
+    }
 }
 //

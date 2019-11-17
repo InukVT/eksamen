@@ -73,4 +73,13 @@ public class Player extends Creature {
         }
         return false;
     }
+
+    public Location movePlayer(Location location, String dir){
+        if(location.dirExists(dir)) {
+            Main.println("You are now in " + location.toString());
+            return location.stringToDir(dir);
+        }
+        Main.println("That direction doesn't exist, you're still in " + location.name);
+        return location;
+    }
 }
