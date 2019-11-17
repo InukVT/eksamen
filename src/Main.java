@@ -55,7 +55,7 @@ public class Main {
 
         println(playerInfoString(player.getHp(), player.name));
 
-        while (player.getHp() > 0){
+        while (player.getHp() > 0 && Enemy.VeryAngryMan.getHp() > 0){
             // game
         }
         println("Game Over");
