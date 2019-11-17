@@ -38,7 +38,7 @@ public class Location {
         }
         if(south != null){
             // whats westwards
-            toPrint = toPrint + "southwards of here is " + west.name;
+            toPrint = toPrint + "southwards of here is " + south.name;
         }
         return toPrint;
     }
