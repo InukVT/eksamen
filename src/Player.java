@@ -58,6 +58,8 @@ public class Player extends Creature {
             case 'n':
                 this.movePlayer(currentLocation, "north");
                 break;
+            case 'g':
+                this
         }
 
 
