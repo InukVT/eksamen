@@ -62,6 +62,7 @@ public class Location {
     public Item item;
     public Boolean key;
     public int potions;
+    public Enemy enemy;
 
     /** Checks to see if there's a room in the given direction */
     public boolean dirExists(String dir){
@@ -129,6 +130,10 @@ public class Location {
 
         Location.keyRoom.key = true;
         Location.potionRoom.potions = 5;
+
+        Location.bossRoom.enemy = Enemy.VeryAngryMan;
+        Location.miniBossRoom.enemy = Enemy.AngryMan;
+        Location.potionRoom.enemy = Enemy.Nurse;
     }
 }
 //

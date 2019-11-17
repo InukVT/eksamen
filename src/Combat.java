@@ -35,8 +35,8 @@ public class Combat {
     }
 
     /** The combat loop */
-    public void combatLoop(Creature player, Creature enemy){
-        Main.println(String.format("You've encountered %s, they have %i health, and you have %i. What are you going to do?", enemy.getName(), enemy.getHp(), player.getHp()));
+    public void combatLoop(Player player,Enemy enemy){
+        Main.println(String.format("You've encountered %s, they have %d health, and you have %d. What are you going to do?", enemy.getName(), enemy.getHp(), player.getHp()));
         while (player.getHp() > 0 && enemy.getHp() > 0){
 
         }

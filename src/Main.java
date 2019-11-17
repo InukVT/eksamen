@@ -20,8 +20,16 @@ public class Main {
     }
 
     private static void gameLoop(Player player){
+        Combat combat = new Combat();
         while (player.getHp() > 0 && Enemy.VeryAngryMan.getHp() > 0){
             // game
+            if(player.currentLocation.enemy != null){
+                if (player.currentLocation.enemy.getHp() > 0){
+
+                    combat.combatLoop(player, player.currentLocation.enemy);
+                }
+            }
+
             if(player.currentLocation.key == true){
                 println("There's a key in the room, pick it up? y/n");
                 player.pickup(Location.keyRoom);
