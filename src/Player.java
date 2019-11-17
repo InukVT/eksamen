@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 /** The player class
- * @author Bastian Inuk Christensen: inuk@ruc.dk
  * */
 public class Player extends Creature {
 
