@@ -98,6 +98,9 @@ public class Player extends Creature {
                         Main.println("You don't have potions");
                     }
                     break;
+                case 'p':
+                    // use potion
+                    // If none other key is keyed, this is what happens
                 default:
                     Main.println("Illegal move");
             }
