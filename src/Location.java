@@ -34,11 +34,11 @@ public class Location {
         }
         if(north != null){
             // whats westwards
-            toPrint = toPrint + "westwards of here is " + north.name;
+            toPrint = toPrint + "northwards of here is " + north.name;
         }
         if(south != null){
             // whats westwards
-            toPrint = toPrint + "westwards of here is " + west.name;
+            toPrint = toPrint + "southwards of here is " + west.name;
         }
         return toPrint;
     }
