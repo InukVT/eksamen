@@ -38,6 +38,20 @@ public class Main {
                     player.pickup(Location.potionRoom);
                 }
                 // TODO: if statement
+                if (player.currentLocation.north != null) {
+                    println("Press (N) to move north");
+                }
+                if (player.currentLocation.south != null) {
+                    println("Press (S) to move south");
+                }   
+                if (player.currentLocation.east != null) {
+                    println("Press (E) to move east");
+
+                }if (player.currentLocation.west != null) {
+                    println("Press (W) to move west");
+                }
+
+
                 Main.println("Press n to move north, press w to move west, s to south and e to east" + " your HP is currently " + player.getHp() + " press P to use potions to regain up to 20HP");
                 player.move();
             }
