@@ -1,4 +1,3 @@
-import java.security.cert.CertificateParsingException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
@@ -52,7 +51,7 @@ public class Player extends Creature {
         char ctrl = input().charAt(0);
         switch (ctrl){
             case 'y':
-                if(location == Location.keyRoom){
+                if(location == Location.roomP){
                     key = true;
                     location.key = false;
                     Main.println("You picked up the key!");
