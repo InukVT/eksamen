@@ -12,7 +12,7 @@ public class Creature {
     public void hp(int more){
         hp += more;
     }
-
+    // creature constructor
     public Creature(String name, int hp, Item equip){
         this.name = name;
         this.hp = hp;
