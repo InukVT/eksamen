@@ -37,7 +37,7 @@ public class Main {
                 }
             }
             // Because the while loop doesn't stop exactly when player dies
-            if (player.getHp()>0) {
+            if (player.getHp()>0&&Enemy.VeryAngryMan.getHp() > 0) {
                 if (player.currentLocation.key == true) {
                     println("There's a key in the cave, want to pick it up? (Y)es or (N)o?");
                     player.pickup(Location.keyRoom);
@@ -60,8 +60,7 @@ public class Main {
                 }if (player.currentLocation.west != null) {
                     println("Press (W) to move west");
                 }
-
-                player.move();
+                    player.move();
             }
         }
     }
