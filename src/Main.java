@@ -18,12 +18,12 @@ public class Main {
         Player player = new Player(name, item);
         println(playerInfoString(player.name));
 
-        println("You see a " + locations.start.item.name + ". press (Y) to pick it up!");
+        println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
         player.pickup(locations.start);
 
         gameLoop(player);
 
-        println("Game Over");
+        println("Game Over!");
     }
 
     private static void gameLoop(Player player){
@@ -46,19 +46,19 @@ public class Main {
                     player.pickup(Location.potionRoom);
                 }
                 if (player.potions > 0 && player.getHp() < 50) {
-                    Main.println("Your HP is currently " + player.getHp() + ". Press (P) to use potions (+20 HP)");
+                    Main.println("Your HP is currently " + player.getHp() + "! Press (P) to use potions (+20 HP)!");
                 }
                 if (player.currentLocation.north != null) {
-                    println("Press (N) to move north");
+                    println("Press (N) to move north!");
                 }
                 if (player.currentLocation.south != null) {
-                    println("Press (S) to move south");
+                    println("Press (S) to move south!");
                 }
                 if (player.currentLocation.east != null) {
-                    println("Press (E) to move east");
+                    println("Press (E) to move east!");
 
                 }if (player.currentLocation.west != null) {
-                    println("Press (W) to move west");
+                    println("Press (W) to move west!");
                 }
                     player.move();
             }

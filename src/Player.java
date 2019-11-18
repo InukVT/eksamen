@@ -55,7 +55,7 @@ public class Player extends Creature {
                 if(location == Location.keyRoom){
                     key = true;
                     location.key = false;
-                    Main.println("You picked up the key");
+                    Main.println("You picked up the key!");
                 } else if (location == location.potionRoom) {
                     potions = location.potions;
                     location.potions = 0;
@@ -68,10 +68,10 @@ public class Player extends Creature {
                 }
                 break;
             case 'n':
-                Main.println("You let the key be");
+                Main.println("You let the key be!");
                 break;
             default:
-                Main.println("Illegal move");
+                Main.println("Illegal move!");
         }
     }
     public String input(){
@@ -85,7 +85,7 @@ public class Player extends Creature {
         String string = input();
         // Checks if the inputted text is more than a character
         if (string.length() > 1){
-            Main.println("You've got too many characters");
+            Main.println("You've got too many characters!");
         }else {
             char ctrl = string.charAt(0);
             switch (ctrl) {
@@ -105,7 +105,7 @@ public class Player extends Creature {
                     usePotion();
                     break;
                 default:
-                    Main.println("Illegal move");
+                    Main.println("Illegal move!");
             }
         }
 
@@ -122,7 +122,7 @@ public class Player extends Creature {
             potions--;
             Main.println("Potions left: "+potions);
         } else {
-            Main.println("You don't have any potions");
+            Main.println("You don't have any potions!");
         }
     }
 
@@ -136,12 +136,12 @@ public class Player extends Creature {
     public void movePlayer(Location location, String dir){
         if(location.dirExists(dir)) {
             if(location.stringToDir(dir)==Location.bossRoom){
-                Main.println("You've encountered the boss room");
+                Main.println("You've encountered the dungeon!");
                 if(key){
                    this.currentLocation = location.stringToDir(dir);
                 }
                 else {
-                    Main.println("You need the key to unlock the dungeon");
+                    Main.println("You need the key to unlock the dungeon!");
                 }
             }else {
                 // TODO: Add enemy encounter logic here
@@ -157,6 +157,6 @@ public class Player extends Creature {
                 }
             }
         }else{
-        Main.println("That direction doesn't exist, you're still in " + location.name);}
+        Main.println("That direction doesn't exist, you're still in " + location.name + "!");}
     }
 }
