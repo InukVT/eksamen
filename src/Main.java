@@ -18,7 +18,7 @@ public class Main {
         Player player = new Player(name, item);
         println(playerInfoString(player.name));
 
-        println("You see a " + locations.start.item.name + " press y to pickup");
+        println("You see a " + locations.start.item.name + " press (Y) to pickup");
         player.pickup(locations.start);
 
         gameLoop(player);
@@ -39,14 +39,14 @@ public class Main {
             // Because the while loop doesn't stop exactly when player dies
             if (player.getHp()>0) {
                 if (player.currentLocation.key == true) {
-                    println("There's a key in the cave, pick it up? y/n");
+                    println("There's a key in the cave, want to pick it up? (Y)es or (N)o?");
                     player.pickup(Location.keyRoom);
                 } else if (player.currentLocation.potions > 0) {
-                    println("There's x5 potions, want to pick it up? y/n");
+                    println("There's x5 potions, want to pick it up? (Y)es or (N)o?");
                     player.pickup(Location.potionRoom);
                 }
                 if (player.potions > 0 && player.getHp() < 50) {
-                    Main.println("Your HP is currently " + player.getHp() + ". Press P to use potions (+20 HP)");
+                    Main.println("Your HP is currently " + player.getHp() + ". Press (P) to use potions (+20 HP)");
                 }
                 if (player.currentLocation.north != null) {
                     println("Press (N) to move north");
