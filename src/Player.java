@@ -46,7 +46,9 @@ public class Player extends Creature {
     }
 
 
-
+    // key bound functions
+    // y for pickup
+    // n to reject pickup
     public void pickup (Location location){
         char ctrl = input().charAt(0);
         switch (ctrl){
@@ -99,6 +101,8 @@ public class Player extends Creature {
 
         String string = input();
         // Checks if the inputted text is more than a character
+        // assigns the keys NSWE to move the player around
+        // p key to use potions if the player has any
         if (string.length() > 1){
             Main.println("You've got too many characters!");
         }else {
@@ -126,7 +130,8 @@ public class Player extends Creature {
 
 
     }
-
+    // removes a potion from the stack of potions each time a potions is used
+    // also prevents the player from having negative potions
     public void usePotion(){
         if (potions > 0) {
             if (50 - getHp() < 20) {
@@ -140,12 +145,7 @@ public class Player extends Creature {
             Main.println("You don't have any potions!");
         }
     }
-
-
-    /** @return a list of {@link Item} the user is carrying. AKA the Inventory */
-    public ArrayList<Item> getInventory() {
-        return inventory;
-    }
+    
 
 
     public void movePlayer(Location location, String dir){
