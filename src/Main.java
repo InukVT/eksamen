@@ -18,7 +18,7 @@ public class Main {
         Player player = new Player(name, item);
         println(playerInfoString(player.name));
 
-        println("You see a " + locations.start.item.name + " press (Y) to pickup");
+        println("You see a " + locations.start.item.name + ". press (Y) to pick it up!");
         player.pickup(locations.start);
 
         gameLoop(player);
@@ -39,10 +39,10 @@ public class Main {
             // Because the while loop doesn't stop exactly when player dies
             if (player.getHp()>0&&Enemy.VeryAngryMan.getHp() > 0) {
                 if (player.currentLocation.key == true) {
-                    println("There's a key in the cave, want to pick it up? (Y)es or (N)o?");
+                    println("There's a key on the ground. Want to pick it up? (Y)es or (N)o?");
                     player.pickup(Location.keyRoom);
                 } else if (player.currentLocation.potions > 0) {
-                    println("There's x5 potions, want to pick it up? (Y)es or (N)o?");
+                    println("There's 5 potions on the ground. Want to pick it up? (Y)es or (N)o?");
                     player.pickup(Location.potionRoom);
                 }
                 if (player.potions > 0 && player.getHp() < 50) {
