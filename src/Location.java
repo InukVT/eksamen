@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Random;
 public class Location {
     /** Name of location */
     public String name;
