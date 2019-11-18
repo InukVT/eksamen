@@ -57,12 +57,13 @@ public class Player extends Creature {
                 if(location == Location.keyRoom){
                     key = true;
                     location.key = false;
-                    Main.println("You picked up the key");
+                    Main.println("You picked up the key!");
                 } else if (location == location.potionRoom) {
                     potions = location.potions;
                     location.potions = 0;
                     Main.println("You picked up the potions!");
                 } else if (location == location.start) {
+                    Main.println("You picked up the weapon!");
                     if(equip == equip.weapons.get(0)){
                         equip = location.item;
                     }
@@ -70,10 +71,10 @@ public class Player extends Creature {
                 }
                 break;
             case 'n':
-                Main.println("You let the key be");
+                Main.println("You let the key be!");
                 break;
             default:
-                Main.println("Illegal move");
+                Main.println("Illegal move!");
         }
     }
     public String input(){
@@ -83,13 +84,28 @@ public class Player extends Creature {
     }
 
     public void move() {
+        if (potions > 0 && getHp() < 50) {
+            Main.println("Your HP is currently " + getHp() + ". Press (P) to use potions (+20 HP)");
+        }
+        if (currentLocation.north != null) {
+            Main.println("Press (N) to move north");
+        }
+        if (currentLocation.south != null) {
+            Main.println("Press (S) to move south");
+        }
+        if (currentLocation.east != null) {
+            Main.println("Press (E) to move east");
+
+        }if (currentLocation.west != null) {
+            Main.println("Press (W) to move west");
+        }
 
         String string = input();
         // Checks if the inputted text is more than a character
         // assigns the keys NSWE to move the player around
         // p key to use potions if the player has any
         if (string.length() > 1){
-            Main.println("You've got too many characters");
+            Main.println("You've got too many characters!");
         }else {
             char ctrl = string.charAt(0);
             switch (ctrl) {
@@ -109,7 +125,7 @@ public class Player extends Creature {
                     usePotion();
                     break;
                 default:
-                    Main.println("Illegal move");
+                    Main.println("Illegal move!");
             }
         }
 
@@ -127,7 +143,7 @@ public class Player extends Creature {
             potions--;
             Main.println("Potions left: "+potions);
         } else {
-            Main.println("You don't have any potions");
+            Main.println("You don't have any potions!");
         }
     }
     
@@ -136,12 +152,12 @@ public class Player extends Creature {
     public void movePlayer(Location location, String dir){
         if(location.dirExists(dir)) {
             if(location.stringToDir(dir)==Location.bossRoom){
-                Main.println("You've encountered the boss room");
+                Main.println("You've encountered the dungeon!");
                 if(key){
                    this.currentLocation = location.stringToDir(dir);
                 }
                 else {
-                    Main.println("You need the key to unlock the dungeon");
+                    Main.println("You need the key to unlock the dungeon!");
                 }
             }else {
                 // TODO: Add enemy encounter logic here
@@ -157,6 +173,6 @@ public class Player extends Creature {
                 }
             }
         }else{
-        Main.println("That direction doesn't exist, you're still in " + location.name);}
+        Main.println("That direction doesn't exist, you're still in " + location.name + "!");}
     }
 }
