@@ -9,12 +9,12 @@ public class Item {
     public ArrayList<Item> potions = new ArrayList<Item>();
     static public ArrayList<Item> generateAllItems() {
         ArrayList<Item> weapons = new ArrayList<Item>();
-        weapons.add(new Item("Bare hands", 1, 6, true));
-        weapons.add(new Item("Stick",2, 6,true));
-        weapons.add(new Item("Plunger", 4, 9, true));
-        weapons.add(new Item("Swordfish", 4, 4,true));
-        weapons.add(new Item("Flail", 6, 12, true));
-        weapons.add(new Item("Enemy Weap", 5, 6, true));
+        weapons.add(new Item("Bare hands", 2, 24, true));
+        weapons.add(new Item("Stick",4, 4,true));
+        weapons.add(new Item("Plunger", 8, 24, true));
+        weapons.add(new Item("Swordfish", 8, 48,true));
+        weapons.add(new Item("Flail", 12, 24, true));
+        weapons.add(new Item("Enemy Weap", 3, 14, true));
         return weapons;
     }
     Item(){
