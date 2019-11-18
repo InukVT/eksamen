@@ -11,14 +11,15 @@ public class Player extends Creature {
     private Boolean key = false;
 
     public Location currentLocation;
+    public Item currentWeapon;
 
 
     /** Create a new player
      * @param name Required for {@link #toString()} */
     public Player(String name, Item item){
         super(name, 50, item);
-        this.name = name;
         this.currentLocation = Location.start;
+
     }
 
     /** Player represented as a String
@@ -59,6 +60,11 @@ public class Player extends Creature {
                     potions = location.potions;
                     location.potions = 0;
                     Main.println("You picked up the potions!");
+                } else if (location == location.start) {
+                    if(equip == equip.weapons.get(0)){
+                        equip = location.item;
+                    }
+                    location.item = null;
                 }
                 break;
             case 'n':

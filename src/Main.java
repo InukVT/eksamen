@@ -1,3 +1,4 @@
+import java.util.Random;
 
 /** Game class, this is where the game is run */
 public class Main {
@@ -5,13 +6,20 @@ public class Main {
 
     public static void main(String[] args) {
         // Generates all default items
-        Item items = new Item();
-        Location locations = new Location();
 
-        // TODO: Ask user for name, handle exceptions
+        int pickAWeap = new Random().nextInt(4);
+        Item item = new Item();
+        item = item.generateAllItems().get(pickAWeap);
+        Location locations = new Location();
+        locations.start.item = item;
+
+
         String name = "traveler";
-        Player player = new Player(name, items.weapons.get(0));
+        Player player = new Player(name, item);
         println(playerInfoString(player.name));
+
+        println("You see a " + locations.start.item.name + " press y to pickup");
+        player.pickup(locations.start);
 
         gameLoop(player);
 
