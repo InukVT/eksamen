@@ -119,6 +119,8 @@ public class Player extends Creature {
             } else {
                 this.hp(20);
             }
+            potions--;
+            Main.println("Potions left: "+potions);
         } else {
             Main.println("You don't have any potions");
         }

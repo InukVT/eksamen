@@ -23,11 +23,11 @@ public class Combat {
        int defRate = hitRate(receiver.equip);
        if (hitRate > defRate) {
            int dmgDealt = sender.equip.damage;
-           System.out.println(sender.name + " dealt " + dmgDealt + " damage");
+           System.out.println(sender.name + " dealt " + dmgDealt + " damage.");
            receiver.damage(dmgDealt);
        } else if (hitRate == defRate) {
            int dmgDealt = 2/sender.equip.damage;
-           System.out.println(sender.name + " dealt " + dmgDealt + " damage");
+           System.out.println(sender.name + " dealt " + dmgDealt + " damage.");
            receiver.damage(dmgDealt);
        } else if (hitRate < defRate) {
            System.out.println(sender.name + " missed");
@@ -36,9 +36,14 @@ public class Combat {
 
     /** The combat loop */
     public void combatLoop(Player player,Enemy enemy){
-        Main.println(String.format("You've encountered %s, they have %d health, and you have %d. What are you going to do?", enemy.getName(), enemy.getHp(), player.getHp()));
+        Main.println(String.format("You´ve encountered %s.", enemy.name));
+       // Main.println(String.format("You've encountered %s, they have %d health, and you have %d. What are you going to do?", enemy.getName(), enemy.getHp(), player.getHp()));
         while (player.getHp() > 0 && enemy.getHp() > 0){
-            Main.println("Want to use a potion? press (P) \nPress (A) to attack");
+            Main.println("you have " + player.getHp() + " HP | " + enemy.getName() + " have " + enemy.getHp() + " HP");
+            if(player.potions > 0 ) {
+                Main.println("If you want to use a potion? press (P).");
+            }
+            Main.println("Press (A) to attack");
             char ctrl = player.input().charAt(0);
             switch (ctrl) {
                 case 'p':
