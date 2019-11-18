@@ -55,7 +55,7 @@ public class Player extends Creature {
                 if(location == Location.keyRoom){
                     key = true;
                     location.key = false;
-                    Main.println("You picked up a key");
+                    Main.println("You picked up the key");
                 } else if (location == location.potionRoom) {
                     potions = location.potions;
                     location.potions = 0;
@@ -120,7 +120,7 @@ public class Player extends Creature {
                 this.hp(20);
             }
         } else {
-            Main.println("You don't have potions");
+            Main.println("You don't have any potions");
         }
     }
 
@@ -139,7 +139,7 @@ public class Player extends Creature {
                    this.currentLocation = location.stringToDir(dir);
                 }
                 else {
-                    Main.println("You need the key to unlock the boss room");
+                    Main.println("You need the key to unlock the dungeon");
                 }
             }else {
                 // TODO: Add enemy encounter logic here
