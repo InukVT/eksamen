@@ -103,7 +103,7 @@ public class Player extends Creature {
             } else {
                 this.hp(20);
             }
-            potions--;
+           potions--;
             Main.println("Potions left: "+potions);
         } else {
             Main.println("You don't have any potions");
@@ -121,7 +121,6 @@ public class Player extends Creature {
                     Main.println("You need the key to unlock the dungeon");
                 }
             }else {
-                // TODO: Add enemy encounter logic here
                 this.currentLocation = location.stringToDir(dir);
                 Main.println("You are now in " + this.currentLocation.toString());
                 int encounter = new Random().nextInt(5);
