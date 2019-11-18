@@ -4,22 +4,22 @@ public class Location {
     /** Name of location */
     public String name;
     /** special rooms */
-    static Location start = new Location("Start");
-    static Location keyRoom = new Location("Key Room");
-    static Location bossRoom = new Location("Boss Room");
-    static Location potionRoom = new Location("East from roomJ");
-    static Location miniBossRoom = new Location("South from potionRoom");
+    static Location start = new Location("the city");
+    static Location keyRoom = new Location("the cave");
+    static Location bossRoom = new Location("the dungeon");
+    static Location potionRoom = new Location("the hospital");
+    static Location miniBossRoom = new Location("the toilet");
     /** normal rooms */
-    static Location roomA = new Location("room A");
-    static Location roomB = new Location("room B");
-    static Location roomC = new Location("room C");
-    static Location roomD = new Location("room D");
-    static Location roomE = new Location("room E");
-    static Location roomF = new Location("room F");
-    static Location roomG = new Location("room G");
-    static Location roomH = new Location("room H");
-    static Location roomI = new Location("room I");
-    static Location roomJ = new Location("room J");
+    static Location roomA = new Location("woods A");
+    static Location roomB = new Location("woods B");
+    static Location roomC = new Location("woods C");
+    static Location roomD = new Location("woods D");
+    static Location roomE = new Location("woods E");
+    static Location roomF = new Location("woods F");
+    static Location roomG = new Location("woods G");
+    static Location roomH = new Location("woods H");
+    static Location roomI = new Location("woods I");
+    static Location roomJ = new Location("woods J");
 
     @Override
     public String toString() {

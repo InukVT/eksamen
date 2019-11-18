@@ -31,10 +31,10 @@ public class Main {
             // Because the while loop doesn't stop exactly when player dies
             if (player.getHp()>0) {
                 if (player.currentLocation.key == true) {
-                    println("There's a key in the room, pick it up? y/n");
+                    println("There's a key in the cave, pick it up? y/n");
                     player.pickup(Location.keyRoom);
                 } else if (player.currentLocation.potions > 0) {
-                    println("There's x5 potions, pick it up? y/n");
+                    println("There's x5 potions, want to pick it up? y/n");
                     player.pickup(Location.potionRoom);
                 }
                 if (player.potions > 0 && player.getHp() < 50) {
