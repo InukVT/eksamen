@@ -16,7 +16,7 @@ public class Main {
 
         String name = "traveler";
         Player player = new Player(name, item);
-        println("Hello Traveler");
+        println(playerInfoString(player.name));
 
         println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
         player.pickup(locations.start);
@@ -45,7 +45,6 @@ public class Main {
                     println("There's 5 potions on the ground. Want to pick it up? (Y)es or (N)o?");
                     player.pickup(Location.potionRoom);
                 }
-<<<<<<< HEAD
                 if (player.potions > 0 && player.getHp() < 50) {
                     Main.println("Your HP is currently " + player.getHp() + "! Press (P) to use potions (+20 HP)!");
                 }
@@ -61,13 +60,16 @@ public class Main {
                 }if (player.currentLocation.west != null) {
                     println("Press (W) to move west!");
                 }
-=======
->>>>>>> 9d99d0e327bf7db86b1f7ed428dd80383d63711c
                     player.move();
             }
         }
     }
 
+    private static String playerInfoString( String name) {
+        return String.format("Hello %s.", name );
+    }
+
+    /** Convenience function over std out */
     public static void println(String toPrint){
         System.out.println(toPrint);
     }

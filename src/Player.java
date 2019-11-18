@@ -1,22 +1,52 @@
+import java.security.cert.CertificateParsingException;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
-
+/** The player class
+ * */
 public class Player extends Creature {
     public int potions = 0;
+    /** What the player carries */
+    private ArrayList<Item> inventory;
     private Boolean key = false;
 
     public Location currentLocation;
+    public Item currentWeapon;
 
+
+    /** Create a new player
+     * @param name Required for {@link #toString()} */
     public Player(String name, Item item){
         super(name, 50, item);
         this.currentLocation = Location.start;
 
     }
 
+    /** Player represented as a String
+     *  <p>
+     *  TODO: Find a better representation of player, like health
+     *
+     *  @return {@link Player}'s {@link #name}, as that represent the player the best
+     *
+     *  */
     @Override
     public String toString() {
         return name;
     }
+
+
+
+    /** Adds an item to the players inventory, if the player can handle the weight. Returns true if successfull, otherwise false.
+     *
+     * @param item a {@link Item} to be added to the players {@link #inventory}.
+     *
+     * @return <code>true</code> if the item added <code>false</code> if the item is too heavy for the user, and thus can't be added.
+     * */
+    public void appendInventory(Item item){
+            this.inventory.add(item);
+    }
+
+
 
     public void pickup (Location location){
         char ctrl = input().charAt(0);
@@ -44,7 +74,6 @@ public class Player extends Creature {
                 Main.println("Illegal move!");
         }
     }
-
     public String input(){
         Scanner scanner = new Scanner(System.in);
         // Stores the scanned string as all lowercase, to be case incensitive
@@ -52,21 +81,7 @@ public class Player extends Creature {
     }
 
     public void move() {
-        if (potions > 0 && getHp() < 50) {
-            Main.println("Your HP is currently " + getHp() + ". Press (P) to use potions (+20 HP)");
-        }
-        if (currentLocation.north != null) {
-            Main.println("Press (N) to move north");
-        }
-        if (currentLocation.south != null) {
-            Main.println("Press (S) to move south");
-        }
-        if (currentLocation.east != null) {
-            Main.println("Press (E) to move east");
 
-        }if (currentLocation.west != null) {
-            Main.println("Press (W) to move west");
-        }
         String string = input();
         // Checks if the inputted text is more than a character
         if (string.length() > 1){
@@ -93,6 +108,8 @@ public class Player extends Creature {
                     Main.println("Illegal move!");
             }
         }
+
+
     }
 
     public void usePotion(){
@@ -102,12 +119,19 @@ public class Player extends Creature {
             } else {
                 this.hp(20);
             }
-           potions--;
+            potions--;
             Main.println("Potions left: "+potions);
         } else {
             Main.println("You don't have any potions!");
         }
     }
+
+
+    /** @return a list of {@link Item} the user is carrying. AKA the Inventory */
+    public ArrayList<Item> getInventory() {
+        return inventory;
+    }
+
 
     public void movePlayer(Location location, String dir){
         if(location.dirExists(dir)) {
@@ -120,6 +144,7 @@ public class Player extends Creature {
                     Main.println("You need the key to unlock the dungeon!");
                 }
             }else {
+                // TODO: Add enemy encounter logic here
                 this.currentLocation = location.stringToDir(dir);
                 Main.println("You are now in " + this.currentLocation.toString());
                 int encounter = new Random().nextInt(5);
