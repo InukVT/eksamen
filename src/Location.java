@@ -2,34 +2,34 @@ public class Location {
     /** Name of location */
     public String name;
     /** special rooms */
-    static Location start = new Location("the city!");
-    static Location keyRoom= new Location("the cave!");
-    static Location bossRoom = new Location("the dungeon!");
-    static Location potionRoom = new Location("the hospital!");
-    static Location miniBossRoom = new Location("the hospitals toilet");
-    static Location roomWep = new Location("Weapon room");
+    static Location start = new Location("the bus stop");
+    static Location keyRoom= new Location("key room!"); //Playground
+    static Location bossRoom = new Location("Moms house!"); //Home Town
+    static Location potionRoom = new Location("the hospital!"); //Hospital
+    static Location miniBossRoom = new Location("dads home"); //The other side
+    static Location roomWep = new Location("Weapon room"); //Village
     /** normal rooms */
-    static Location roomA = new Location("room A");
-    static Location roomB = new Location("room B");
-    static Location roomC = new Location("room C");
-    static Location roomD = new Location("room D");
-    static Location roomE = new Location("room E");
-    static Location roomF = new Location("room F");
-    static Location roomG = new Location("room G");
-    static Location roomH = new Location("room H");
-    static Location roomI = new Location("room I");
-    static Location roomJ = new Location("room J");
-    static Location roomK = new Location("room K");
-    static Location roomL = new Location("room L");
-    static Location roomM = new Location("room M");
-    static Location roomN = new Location("room N");
-    static Location roomO = new Location("room O");
-    static Location roomP = new Location("room P");
-    static Location roomQ = new Location("room Q");
-    static Location roomR = new Location("room R");
-    static Location roomS = new Location("room S");
-    static Location roomT = new Location("room T");
-    static Location roomU = new Location("room U");
+    static Location roomA = new Location("room A"); //Road
+    static Location roomB = new Location("room B"); //Road
+    static Location roomC = new Location("room C"); //Home town
+    static Location roomD = new Location("room D"); //Home town
+    static Location roomE = new Location("room E"); //Hospital
+    static Location roomF = new Location("room F"); //Home town
+    static Location roomG = new Location("room G"); //Home town
+    static Location roomH = new Location("room H"); //Road
+    static Location roomI = new Location("room I"); //Hospital
+    static Location roomJ = new Location("room J"); //The other side
+    static Location roomK = new Location("room K"); //The other side
+    static Location roomL = new Location("room L"); //Playground
+    static Location roomM = new Location("room M"); //Playground
+    static Location roomN = new Location("room N"); //Playground
+    static Location roomO = new Location("room O"); //Playground
+    static Location roomP = new Location("room P"); //Playground
+    static Location roomQ = new Location("room Q"); //Village
+    static Location roomR = new Location("room R"); //Village
+    static Location roomS = new Location("room S"); //Village
+    static Location roomT = new Location("room T"); //Village
+    static Location roomU = new Location("room U"); //Home town
 
 
     @Override
