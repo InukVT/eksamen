@@ -1,7 +1,6 @@
-import java.security.cert.CertificateParsingException;
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
+
 public class Player extends Creature {
     public int potions = 0;
     private Boolean key = false;
