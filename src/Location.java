@@ -10,16 +10,16 @@ public class Location {
     static Location potionRoom = new Location("the hospital");
     static Location miniBossRoom = new Location("the toilet");
     /** normal rooms */
-    static Location roomA = new Location("woods A");
-    static Location roomB = new Location("woods B");
-    static Location roomC = new Location("woods C");
-    static Location roomD = new Location("woods D");
-    static Location roomE = new Location("woods E");
-    static Location roomF = new Location("woods F");
-    static Location roomG = new Location("woods G");
-    static Location roomH = new Location("woods H");
-    static Location roomI = new Location("woods I");
-    static Location roomJ = new Location("woods J");
+    static Location roomA = new Location("the woods A");
+    static Location roomB = new Location("the woods B");
+    static Location roomC = new Location("the woods C");
+    static Location roomD = new Location("the woods D");
+    static Location roomE = new Location("the woods E");
+    static Location roomF = new Location("the woods F");
+    static Location roomG = new Location("the woods G");
+    static Location roomH = new Location("the woods H");
+    static Location roomI = new Location("the woods I");
+    static Location roomJ = new Location("the woods J");
 
     @Override
     public String toString() {
