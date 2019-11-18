@@ -140,10 +140,12 @@ public class Player extends Creature {
                 this.currentLocation = location.stringToDir(dir);
                 Main.println("You are now in " + this.currentLocation.toString());
                 int encounter = new Random().nextInt(5);
-                if (currentLocation != location.bossRoom || currentLocation != location.miniBossRoom || currentLocation != location.potionRoom)
-                if (encounter == 3) {
-                    Enemy goon = new Enemy("Goon", 15, Item.generateAllItems().get(5));
-
+                if (currentLocation != location.bossRoom || currentLocation != location.miniBossRoom || currentLocation != location.potionRoom) {
+                    if (encounter == 3) {
+                        Enemy goon = new Enemy("Goon", 15, Item.generateAllItems().get(5));
+                        Combat combat = new Combat();
+                        combat.combatLoop(this, goon);
+                    }
                 }
             }
         }else{
