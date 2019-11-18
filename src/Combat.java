@@ -41,9 +41,14 @@ public class Combat {
             Main.println("Want to use a potion? press (P) \nPress (A) to attack");
             char ctrl = player.input().charAt(0);
             switch (ctrl) {
+                case 'p':
+                    player.usePotion();
+                    break;
                 case 'a':
                     hit(enemy, player);
                     break;
+                default:
+                    Main.println("I told you to choose an actian, and now:");
             }
             hit(player, enemy);
 

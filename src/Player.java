@@ -94,15 +94,7 @@ public class Player extends Creature {
                     this.movePlayer(currentLocation, "north");
                     break;
                 case 'p':
-                    if (potions > 0) {
-                        if (50 - getHp() < 20) {
-                            this.hp(50 - getHp());
-                        } else {
-                            this.hp(20);
-                        }
-                    } else {
-                        Main.println("You don't have potions");
-                    }
+                    usePotion();
                     break;
                 default:
                     Main.println("Illegal move");
@@ -110,6 +102,18 @@ public class Player extends Creature {
         }
 
 
+    }
+
+    public void usePotion(){
+        if (potions > 0) {
+            if (50 - getHp() < 20) {
+                this.hp(50 - getHp());
+            } else {
+                this.hp(20);
+            }
+        } else {
+            Main.println("You don't have potions");
+        }
     }
 
 
