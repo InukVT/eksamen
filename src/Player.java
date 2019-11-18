@@ -61,6 +61,7 @@ public class Player extends Creature {
                     location.potions = 0;
                     Main.println("You picked up the potions!");
                 } else if (location == location.start) {
+                    Main.println("You picked up the weapon!");
                     if(equip == equip.weapons.get(0)){
                         equip = location.item;
                     }
@@ -81,6 +82,21 @@ public class Player extends Creature {
     }
 
     public void move() {
+        if (potions > 0 && getHp() < 50) {
+            Main.println("Your HP is currently " + getHp() + ". Press (P) to use potions (+20 HP)");
+        }
+        if (currentLocation.north != null) {
+            Main.println("Press (N) to move north");
+        }
+        if (currentLocation.south != null) {
+            Main.println("Press (S) to move south");
+        }
+        if (currentLocation.east != null) {
+            Main.println("Press (E) to move east");
+
+        }if (currentLocation.west != null) {
+            Main.println("Press (W) to move west");
+        }
 
         String string = input();
         // Checks if the inputted text is more than a character
