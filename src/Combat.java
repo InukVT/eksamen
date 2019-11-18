@@ -48,7 +48,7 @@ public class Combat {
                     hit(enemy, player);
                     break;
                 default:
-                    Main.println("I told you to choose an actian, and now:");
+                    Main.println("I told you to choose an action, and now:");
             }
             hit(player, enemy);
 
