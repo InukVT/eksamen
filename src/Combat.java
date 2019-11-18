@@ -23,7 +23,7 @@ public class Combat {
        int defRate = hitRate(receiver.equip);
        if (hitRate > defRate) {
            int dmgDealt = sender.equip.damage;
-           System.out.println(sender.name + " dealt " + dmgDealt + "damage");
+           System.out.println(sender.name + " dealt " + dmgDealt + " damage");
            receiver.damage(dmgDealt);
        } else if (hitRate == defRate) {
            int dmgDealt = 2/sender.equip.damage;
