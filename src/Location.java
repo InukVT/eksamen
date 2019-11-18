@@ -24,24 +24,6 @@ public class Location {
     @Override
     public String toString() {
         String toPrint = this.name;
-        /*
-        if(west != null){
-            // whats westwards
-            toPrint = toPrint + west.name;
-        }
-        if(east != null){
-            // whats westwards
-            toPrint = toPrint + east.name;
-        }
-        if(north != null){
-            // whats westwards
-            toPrint = toPrint + north.name;
-        }
-        if(south != null){
-            // whats westwards
-            toPrint = toPrint + west.name;
-        }
-         */
         return toPrint;
     }
 

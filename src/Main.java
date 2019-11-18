@@ -18,12 +18,12 @@ public class Main {
         Player player = new Player(name, item);
         println("Hello Traveler");
 
-        println("You see a " + locations.start.item.name + ". press (Y) to pick it up!");
+        println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
         player.pickup(locations.start);
 
         gameLoop(player);
 
-        println("Game Over");
+        println("Game Over!");
     }
 
     private static void gameLoop(Player player){
