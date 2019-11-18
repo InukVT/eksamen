@@ -4,22 +4,22 @@ public class Location {
     /** Name of location */
     public String name;
     /** special rooms */
-    static Location start = new Location("Start", "You're at a new place, you don't know what happened");
-    static Location keyRoom = new Location("Key Room", "Congrats, you found the master key");
-    static Location bossRoom = new Location("Boss Room", "You see a dragon behind iron bars, seem you need som sort key to gain access");
-    static Location potionRoom = new Location("East from roomJ", "You've found x5 healing potions");
-    static Location miniBossRoom = new Location("South from potionRoom", "You've encountered Angry Man");
+    static Location start = new Location("the city");
+    static Location keyRoom = new Location("the cave");
+    static Location bossRoom = new Location("the dungeon");
+    static Location potionRoom = new Location("the hospital");
+    static Location miniBossRoom = new Location("the toilet");
     /** normal rooms */
-    static Location roomA = new Location("room A", "You're now north from the starting point");
-    static Location roomB = new Location("room B", "You're not west from the starting point");
-    static Location roomC = new Location("room C", "You're now in room C");
-    static Location roomD = new Location("room D", "You're now in room D");
-    static Location roomE = new Location("room E", "You're now in room E");
-    static Location roomF = new Location("room F", "You're now in room F");
-    static Location roomG = new Location("room G", "You're now in room G");
-    static Location roomH = new Location("room H", "You're now in room H");
-    static Location roomI = new Location("room I", "You're now in room I");
-    static Location roomJ = new Location("room J", "You're now in room J");
+    static Location roomA = new Location("the woods A");
+    static Location roomB = new Location("the woods B");
+    static Location roomC = new Location("the woods C");
+    static Location roomD = new Location("the woods D");
+    static Location roomE = new Location("the woods E");
+    static Location roomF = new Location("the woods F");
+    static Location roomG = new Location("the woods G");
+    static Location roomH = new Location("the woods H");
+    static Location roomI = new Location("the woods I");
+    static Location roomJ = new Location("the woods J");
 
     @Override
     public String toString() {
@@ -48,12 +48,8 @@ public class Location {
     /** A connecting location */
     public Location north, south, east, west;
 
-    /** Short description of the location for our traveler */
-    String description;
-
-    public Location(String name, String description) {
+    public Location(String name) {
         this.name = name;
-        this.description = description;
         this.key = false;
         this.potions = 0;
     }
