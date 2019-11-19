@@ -30,8 +30,11 @@ public class Main {
 
 
         gameLoop(player);
-
-        println("Game Over!");
+        if (player.getHp() > 0 ) {
+            println("Game Clear!");
+        } else {
+            println("Game Over!");
+        }
     }
 
     private static void gameLoop(Player player){
@@ -61,6 +64,9 @@ public class Main {
                     player.pickup(Location.potionRoom);
                 }
                 player.move();
+            }
+            if (Enemy.VeryAngryMan.getHp() <= 0) {
+                break;
             }
         }
     }

@@ -140,10 +140,10 @@ public class Player extends Creature {
     // also prevents the player from having negative potions
     public void usePotion(){
         if (potions > 0) {
-            if (50 - getHp() < 20) {
+            if (50 - getHp() < 10) {
                 this.hp(50 - getHp());
             } else {
-                this.hp(20);
+                this.hp(10);
             }
             potions--;
             Main.println("Potions left: "+potions);
