@@ -72,6 +72,7 @@ public class Main {
         }
     }
 
+    // Convinience function, because we stdout all the time.
     public static void println(String toPrint) {
         System.out.println(toPrint);
     }

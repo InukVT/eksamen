@@ -2,14 +2,16 @@ import java.util.Scanner;
 import java.util.Random;
 //* The player class
 public class Player extends Creature {
+    // What the player carries
     public int potions = 0;
-    //* What the player carries
     private Boolean key = false;
-
+    // Where is the player?
     public Location currentLocation;
 
 
     // Create a new player
+    // Create a new player
+    // @param name Required for toString
     public Player(String name, Item item){
         super(name, 50, item);
         this.currentLocation = Location.start;
@@ -60,7 +62,7 @@ public class Player extends Creature {
         // Stores the scanned string as all lowercase, to be case incensitive
         return scanner.next().toLowerCase();
     }
-
+    // Asks the player where to move, and moves the player accordingly
     public void move() {
         if (potions > 0 && getHp() < 50) {
             Main.println("Your HP is currently " + getHp() + ". Press (P) to use potions (+10 HP)");
@@ -126,7 +128,7 @@ public class Player extends Creature {
     }
     
 
-
+    // Move the player in the direction assigned
     public void movePlayer(Location location, String dir){
         if(location.dirExists(dir)) {
             if(location.stringToDir(dir)==Location.bossRoom){
