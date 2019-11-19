@@ -1,18 +1,26 @@
 public class Location {
-    /** Name of location */
+    // Description of location
     public String description;
-    /** special rooms */
+
+    // The items a given room can have
+    public Item item;
+    public Boolean key;
+    public int potions;
+    public Enemy enemy;
+
+    // Lazy relations system
+    public Location north, south, east, west;
+
+
+    // Room initialisations
+    // special rooms
     static Location start = new Location("You're at the start. Way above you in the celling you see the hole where you fell through");
-    // + you picked up the key
     static Location keyRoom= new Location("You're at the main hall of the Keyhold"); //Keyhold
     static Location bossRoom = new Location("You're at the room of owner of this labyrinth. Prepare yourself"); //Sinister part
     static Location potionRoom = new Location("You're in the supply room. You may find something that may help you here"); //Supply room
     static Location miniBossRoom = new Location("You're at the HQ. And you see a Angry Man. You nw understand the earlier shouting"); //Barracks
-    // TODO Pickup
     static Location roomWeap = new Location("You entered the armory!"); //Armoury
-    /** normal rooms */
-    // TODO ændre A og B (Går kun 1 vej)
-            //TODO Kaiyin ret alt!
+    // normal rooms
     static Location roomA = new Location("You're still in the labyrinth. You see nothing to your left or in front you, so your only options to go south or go east"); //Armoury (North-western part of the labyrinth)
     static Location roomB = new Location("You're still in the labyrinth. You see nothing in front of you nor behind, so your only options are to go west or east"); //Armoury (North-western part of the labyrinth)
     static Location roomC = new Location("You're at the sinister part of the labyrinth. Your options are to west or east"); //Sinister part (North-eastern part of the labyrinth)
@@ -42,22 +50,13 @@ public class Location {
         return toPrint;
     }
 
-    /** A connecting location */
-    public Location north, south, east, west;
-
     public Location(String description) {
         this.description = description;
         this.key = false;
         this.potions = 0;
     }
-    // Using ArrayList, so we can potentially have 1000 items in a room, no issue.
-    /** An array of all the items in the labyrinth */
-    public Item item;
-    public Boolean key;
-    public int potions;
-    public Enemy enemy;
 
-    /** Checks to see if there's a room in the given direction */
+    // Checks to see if there's a room in the given direction
     public boolean dirExists(String dir){
         if(stringToDir(dir)!=null){
             return true;
@@ -79,6 +78,7 @@ public class Location {
         return this;
     }
     public Location () {
+        // Lazy relation
         Location.start.north = Location.roomA;
         Location.start.west = Location.roomB;
         Location.start.south = Location.roomH;

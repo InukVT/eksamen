@@ -139,7 +139,6 @@ public class Player extends Creature {
                     Main.println("You need some sort of key to gain access here");
                 }
             }else {
-                // TODO: Add enemy encounter logic here
                 this.currentLocation = location.stringToDir(dir);
                 Main.println("" + this.currentLocation.toString());
                 int encounter = new Random().nextInt(5);
