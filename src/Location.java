@@ -161,7 +161,7 @@ public class Location {
 
         Location.keyRoom.key = true;
         Location.potionRoom.potions = 5;
-        //Location.roomWeap.item = true;
+        Location.roomWeap.item = Item.generateAllItems().get(6);
 
         Location.bossRoom.enemy = Enemy.VeryAngryMan;
         Location.miniBossRoom.enemy = Enemy.AngryMan;

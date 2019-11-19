@@ -10,7 +10,9 @@ public class Main {
         // below is the constructor for the weapon spawner at the starting point
         int pickAWeap = new Random().nextInt(4);
         Item item = new Item();
+        //Item item2 = new Item();
         item = item.generateAllItems().get(pickAWeap);
+        //item2 = item.generateAllItems().get(6);
         Location locations = new Location();
         locations.start.item = item;
 
@@ -21,10 +23,10 @@ public class Main {
 
         println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
         player.pickup(locations.start);
-        if (player.currentLocation == Location.roomWeap) {
-            println("You see a " + locations.roomWeap.item.name + ". Press (Y) to pick it up!");
-            locations.roomWeap.item = item;
-        }
+        //if (player.currentLocation == Location.roomWeap) {
+        //    println("You see a " + locations.roomWeap.item.name + ". Press (Y) to pick it up!");
+        //    locations.roomWeap.item = item2;
+        //}
 
 
         gameLoop(player);
