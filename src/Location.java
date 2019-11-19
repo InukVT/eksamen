@@ -11,7 +11,6 @@ public class Location {
     // Lazy relations system
     public Location north, south, east, west;
 
-
     // Room initialisations
     // special rooms
     static Location start = new Location("You're at the start. Way above you in the celling you see the hole where you fell through");
@@ -171,7 +170,5 @@ public class Location {
         Location.bossRoom.enemy = Enemy.VeryAngryMan;
         Location.miniBossRoom.enemy = Enemy.AngryMan;
         Location.potionRoom.enemy = Enemy.Nurse;
-
     }
 }
-//

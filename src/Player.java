@@ -8,14 +8,12 @@ public class Player extends Creature {
     // Where is the player?
     public Location currentLocation;
 
-
     // Create a new player
     // Create a new player
     // @param name Required for toString
     public Player(String name, Item item){
         super(name, 50, item);
         this.currentLocation = Location.start;
-
     }
 
     // Small function to take the item from location into players inventory
@@ -56,7 +54,7 @@ public class Player extends Creature {
         }
     }
 
-    // Becaue we use this twice, this is how we do it
+    // Because we use this twice, this is how we do it
     public String input(){
         Scanner scanner = new Scanner(System.in);
         // Stores the scanned string as all lowercase, to be case incensitive
@@ -108,9 +106,8 @@ public class Player extends Creature {
                     Main.println("Illegal move!");
             }
         }
-
-
     }
+
     // removes a potion from the stack of potions each time a potions is used
     // also prevents the player from having negative potions
     public void usePotion(){
@@ -126,7 +123,6 @@ public class Player extends Creature {
             Main.println("You don't have any potions!");
         }
     }
-    
 
     // Move the player in the direction assigned
     public void movePlayer(Location location, String dir){
@@ -134,11 +130,10 @@ public class Player extends Creature {
             if(location.stringToDir(dir)==Location.bossRoom){
                 if(key){
                    this.currentLocation = location.stringToDir(dir);
-                }
-                else {
+                } else {
                     Main.println("You need some sort of key to gain access here");
                 }
-            }else {
+            } else {
                 this.currentLocation = location.stringToDir(dir);
                 Main.println("" + this.currentLocation.toString());
                 int encounter = new Random().nextInt(5);
@@ -154,7 +149,7 @@ public class Player extends Creature {
                     pickup(currentLocation);
                 }
             }
-        }else{
+        } else {
         Main.println("That direction doesn't exist, you're still in " + location.description + "!");}
     }
 }

@@ -1,12 +1,12 @@
-// Generic creatures class used by {@link Player} and {@link Enemy}
+// Generic creatures class used by Player and Enemy
 public class Creature {
     // Equipped weapon for use in combat
     public Item equip;
 
-    //* Name of Creature
+    // Name of Creature
     public String name;
 
-    //* Creatures HP
+    // Creatures HP
     private int hp;
 
     public void hp(int more){
@@ -19,11 +19,12 @@ public class Creature {
         this.equip = equip;
     }
 
-    //* @return {@link #hp}
+    // Returns the health for the creature
     public int getHp() {
         return hp;
     }
 
+    // Returns the name of the creature, for used when printing in combat
     public String getName() {
         return name;
     }

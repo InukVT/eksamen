@@ -23,12 +23,12 @@ public class Item {
     Item(){
         weapons = generateAllItems();
     }
+
     // constructor for items and weapons
     Item(String name, int amount, int accuracy) {
         this.name = name;
         this.damage = amount;
         this.accuracy = accuracy;
-
     }
 
     public String name; // item damage
