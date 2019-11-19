@@ -1,14 +1,14 @@
 import java.util.Random;
 
-/**
- * Game class, this is where the game is run
+/*
+  Game class, this is where the game is run
  */
 public class Main {
 
 
     public static void main(String[] args) {
         // Generates all default items
-        /** randomly spawns of the five viable weapons from the weapons arraylist in the item class*/
+        // randomly spawns of the five viable weapons from the weapons arraylist in the item class
         // below is the constructor for the weapon spawner at the starting point
         int pickAWeap = new Random().nextInt(4);
         Item item = new Item();
