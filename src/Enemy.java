@@ -4,7 +4,7 @@ public class Enemy extends Creature {
         super(name, hp, equip);
     }
 
-    // Sepcial enemies
+    // Special enemies
     // Each enemy is an instance.
     static Enemy AngryMan = new Enemy ("Angry Man", 60, Item.generateAllItems().get(7)); // Mini Boss
     static Enemy Nurse = new Enemy ("Nurse", 50, Item.generateAllItems().get(9)); // Boss for potions
