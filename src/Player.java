@@ -56,7 +56,7 @@ public class Player extends Creature {
         }
     }
 
-    // Becaue we use this twice, this is how we do it
+    // Because we use this twice, this is how we do it
     public String input(){
         Scanner scanner = new Scanner(System.in);
         // Stores the scanned string as all lowercase, to be case incensitive
