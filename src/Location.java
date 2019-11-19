@@ -25,9 +25,9 @@ public class Location {
     static Location roomM = new Location("(M)"); //Playground
     static Location roomN = new Location("(N)"); //Playground
     static Location roomO = new Location("(O)"); //Playground
-    static Location roomP = new Location("(P) You entered the playground "); //Playground
-    static Location roomQ = new Location("(Q)"); //Village
-    static Location roomR = new Location("(R)"); //Village
+    static Location roomP = new Location("(P) You entered the playground. You can go two ways. Choose one wisely"); //Playground
+    static Location roomQ = new Location("(Q) Far far away you see an armory. Go north to check it out, or go back"); //Village
+    static Location roomR = new Location("(R) Are you sure u wanna go? If yes, keep going"); //Village
     static Location roomS = new Location("(S))"); //Village
     static Location roomT = new Location("(T)"); //Village
     static Location roomU = new Location("(U)"); //Home town
