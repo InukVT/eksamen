@@ -180,6 +180,6 @@ public class Player extends Creature {
                 }
             }
         }else{
-        Main.println("That direction doesn't exist, you're still in " + location.name + "!");}
+        Main.println("That direction doesn't exist, you're still in " + location.description + "!");}
     }
 }

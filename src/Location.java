@@ -1,6 +1,6 @@
 public class Location {
     /** Name of location */
-    public String name;
+    public String description;
     /** special rooms */
     static Location start = new Location("You're at the start. Way above you in the celling you see the hole where you fell through");
     // + you picked up the key
@@ -38,15 +38,15 @@ public class Location {
 
     @Override
     public String toString() {
-        String toPrint = this.name;
+        String toPrint = this.description;
         return toPrint;
     }
 
     /** A connecting location */
     public Location north, south, east, west;
 
-    public Location(String name) {
-        this.name = name;
+    public Location(String description) {
+        this.description = description;
         this.key = false;
         this.potions = 0;
     }
