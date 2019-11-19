@@ -88,7 +88,7 @@ public class Player extends Creature {
 
     public void move() {
         if (potions > 0 && getHp() < 50) {
-            Main.println("Your HP is currently " + getHp() + ". Press (P) to use potions (+20 HP)");
+            Main.println("Your HP is currently " + getHp() + ". Press (P) to use potions (+10 HP)");
         }
         if (currentLocation.north != null) {
             Main.println("Press (N) to move north");
@@ -138,10 +138,10 @@ public class Player extends Creature {
     // also prevents the player from having negative potions
     public void usePotion(){
         if (potions > 0) {
-            if (50 - getHp() < 20) {
+            if (50 - getHp() < 10) {
                 this.hp(50 - getHp());
             } else {
-                this.hp(20);
+                this.hp(10);
             }
             potions--;
             Main.println("Potions left: "+potions);
@@ -165,7 +165,7 @@ public class Player extends Creature {
             }else {
                 // TODO: Add enemy encounter logic here
                 this.currentLocation = location.stringToDir(dir);
-                Main.println("You are  " + this.currentLocation.toString());
+                Main.println("" + this.currentLocation.toString());
                 int encounter = new Random().nextInt(5);
                 if (currentLocation != location.bossRoom && currentLocation != location.miniBossRoom && currentLocation != location.potionRoom ) {
                     if (encounter == 3) {

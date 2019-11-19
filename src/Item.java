@@ -11,6 +11,7 @@ public class Item {
     static public ArrayList<Item> generateAllItems() {
         ArrayList<Item> weapons = new ArrayList<Item>();
         /** Player weapons */
+        // TODO er bolean nødvendig nu?
         weapons.add(new Item("Bare hands", 2, 24, true));
         weapons.add(new Item("Stick",4, 24,true));
         weapons.add(new Item("Plunger", 8, 24, true));
@@ -18,7 +19,10 @@ public class Item {
         weapons.add(new Item("Flail", 12, 24, true));
         weapons.add(new Item("Gun", 999, 1000, true));
         /** Enemy weapons*/
-        weapons.add(new Item("Enemy Weap", 3, 14, true));
+        weapons.add(new Item("Goon Weap", 3, 16, true)); //6
+        weapons.add(new Item("Angry Weap", 5, 28, true));//7
+        weapons.add(new Item("Very Angry Weap", 6, 32, true));//8
+        weapons.add(new Item("Nurse Weap", 3, 20, true));//9
         return weapons;
     }
     Item(){

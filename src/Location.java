@@ -3,31 +3,36 @@ public class Location {
     public String name;
     /** special rooms */
     static Location start = new Location("in the city");
-    static Location keyRoom= new Location("key room!"); //Playground
+    // + you picked up the key
+    static Location keyRoom= new Location("You entered the cave"); //Playground
     static Location bossRoom = new Location("Moms house!"); //Home Town
     static Location potionRoom = new Location(" at the hospital!"); //Hospital
     static Location miniBossRoom = new Location("dads home"); //The other side
-    static Location roomWeap = new Location("Weapon room"); //Village
+    // TODO Pickup
+    static Location roomWeap = new Location("You entered the armory!"); //Village
     /** normal rooms */
+    // TODO ændre A og B (Går kun 1 vej)
+            //TODO Kaiyin ret alt!
     static Location roomA = new Location("(A) on the road. The road splits into two ways, which way you wanna go?"); //Road
     static Location roomB = new Location("(B )on the road. The road splits two ways, which way you wanna go?"); //Road
     static Location roomC = new Location("(C) seeing your hometown in the view!"); //Home town
     static Location roomD = new Location("(D) close the city sign. If you go south you will get to the hospital. If you go north you getting to the town\" "); //Home town
-    static Location roomE = new Location("(E)"); //Hospital
-    static Location roomF = new Location("(F)"); //Home town
-    static Location roomG = new Location("(G)"); //Home town
+    static Location roomE = new Location("(E) You are on the hospitals parking lot..... "); //Hospital
+    static Location roomF = new Location("(F) You are now in your hometown!"); //Home town
+    static Location roomG = new Location("(G) If you got the key, go find the kidnappers house on the right. Else try go back or left\""); //Home town
     static Location roomH = new Location("(H)"); //Road
     static Location roomI = new Location("(I)"); //Hospital
     static Location roomJ = new Location("(J)"); //The other side
     static Location roomK = new Location("(K)"); //The other side
     static Location roomL = new Location("(L)"); //Playground
-    static Location roomM = new Location("(M)"); //Playground
-    static Location roomN = new Location("(N)"); //Playground
-    static Location roomO = new Location("(O)"); //Playground
-    static Location roomP = new Location("(P)"); //Playground
-    static Location roomQ = new Location("(Q)"); //Village
-    static Location roomR = new Location("(R)"); //Village
-    static Location roomS = new Location("(S))"); //Village
+    static Location roomM = new Location("(M) "); //Playground
+    static Location roomN = new Location("(N) To the south, you see some sort of cave! Check it out! "); //Playground
+    static Location roomO = new Location("(O) You see some kids playing. Go south to check it out!"); //Playground
+    // + back
+    static Location roomP = new Location("(P) You entered the playground. You can go two ways. Choose one wisely"); //Playground
+    static Location roomQ = new Location("(Q) Far far away you see an armory. Go north to check it out, or go back"); //Village
+    static Location roomR = new Location("(R) Are you sure u wanna go? If yes, keep going"); //Village
+    static Location roomS = new Location("(S)"); //Village
     static Location roomT = new Location("(T)"); //Village
     static Location roomU = new Location("(U)"); //Home town
 
