@@ -68,10 +68,8 @@ public class Player extends Creature {
                     }
                     location.item = null;
                 } else if (location == location.roomWeap) {
-                    Main.println("You picked up the weapon");
-                    if (equip == equip.weapons.get(0)) {
+                    Main.println("You picked up the " + location.item.name);
                         equip = location.item;
-                    }
                     location.item = null;
                 }
                 break;
@@ -169,18 +167,17 @@ public class Player extends Creature {
                 this.currentLocation = location.stringToDir(dir);
                 Main.println("You are  " + this.currentLocation.toString());
                 int encounter = new Random().nextInt(5);
-                if (currentLocation != location.bossRoom || currentLocation != location.miniBossRoom || currentLocation != location.potionRoom ) {
+                if (currentLocation != location.bossRoom && currentLocation != location.miniBossRoom && currentLocation != location.potionRoom ) {
                     if (encounter == 3) {
                         Enemy goon = new Enemy("Goon", 15, Item.generateAllItems().get(6));
                         Combat combat = new Combat();
                         combat.combatLoop(this, goon);
                     }
-                }/* else if (currentLocation == location.roomWeap) {
-                    Main.println("You see a " + location.roomWeap.item.name + ". Press (Y) to pick it up!");
-                    Item item = new Item();
-                    item = item.generateAllItems().get(6);
-
-                } */
+                }
+                if (currentLocation.item != null){
+                    Main.println("You see a " + currentLocation.item.name + ". Press (Y) to pick it up!");
+                    pickup(currentLocation);
+                }
             }
         }else{
         Main.println("That direction doesn't exist, you're still in " + location.name + "!");}
