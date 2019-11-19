@@ -47,7 +47,7 @@ public class Combat {
         while (player.getHp() > 0 && enemy.getHp() > 0){
             Main.println("you have " + player.getHp() + " HP! | " + enemy.getName() + " have " + enemy.getHp() + " HP!");
             if(player.potions > 0 ) {
-                Main.println("Press (P) to use potions!");
+                Main.println("Press (P) to use potions! +10HP");
             }
             Main.println("Press (A) to attack!");
             char ctrl = player.input().charAt(0);
