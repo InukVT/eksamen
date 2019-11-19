@@ -11,6 +11,7 @@ public class Item {
     static public ArrayList<Item> generateAllItems() {
         ArrayList<Item> weapons = new ArrayList<Item>();
         /** Player weapons */
+        // TODO er bolean nødvendig nu?
         weapons.add(new Item("Bare hands", 2, 24, true));
         weapons.add(new Item("Stick",4, 24,true));
         weapons.add(new Item("Plunger", 8, 24, true));
