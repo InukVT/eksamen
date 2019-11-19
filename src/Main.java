@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Generates all default items
-        /** randomly spawns of the five viable weapons from the weapons arraylist in the item class*/
+        // randomly spawns of the five viable weapons from the weapons arraylist in the item class*/
         // below is the constructor for the weapon spawner at the starting point
         int pickAWeap = new Random().nextInt(4);
         Item item = new Item();
@@ -72,6 +72,7 @@ public class Main {
         }
     }
 
+    // Convinience function, because we stdout all the time.
     public static void println(String toPrint) {
         System.out.println(toPrint);
     }
