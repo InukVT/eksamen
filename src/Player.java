@@ -1,17 +1,15 @@
 import java.util.Scanner;
 import java.util.Random;
-/** The player class
- * */
+//* The player class
 public class Player extends Creature {
     public int potions = 0;
-    /** What the player carries */
+    //* What the player carries
     private Boolean key = false;
 
     public Location currentLocation;
 
 
-    /** Create a new player
-     * @param name Required for {@link #toString()} */
+    // Create a new player
     public Player(String name, Item item){
         super(name, 50, item);
         this.currentLocation = Location.start;

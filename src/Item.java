@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Item {
-    /**
-     * Items name
-     */
-    /** array list containing viable weapons */
+
+     //Items name
+
+    /* array list containing viable weapons */
     static public ArrayList<Item> weapons = new ArrayList<Item>();
     public ArrayList<Item> potions = new ArrayList<Item>();
     /** inits all items*/
