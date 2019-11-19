@@ -21,6 +21,11 @@ public class Main {
 
         println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
         player.pickup(locations.start);
+        if (player.currentLocation == Location.roomWeap) {
+            println("You see a " + locations.roomWeap.item.name + ". Press (Y) to pick it up!");
+            locations.roomWeap.item = item;
+        }
+
 
         gameLoop(player);
 

@@ -67,6 +67,12 @@ public class Player extends Creature {
                         equip = location.item;
                     }
                     location.item = null;
+                } else if (location == location.roomWeap) {
+                    Main.println("You picked up the weapon");
+                    if (equip == equip.weapons.get(0)) {
+                        equip = location.item;
+                    }
+                    location.item = null;
                 }
                 break;
             case 'n':

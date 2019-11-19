@@ -16,6 +16,7 @@ public class Item {
         weapons.add(new Item("Plunger", 8, 24, true));
         weapons.add(new Item("Swordfish", 8, 48,true));
         weapons.add(new Item("Flail", 12, 24, true));
+        weapons.add(new Item("Gun", 999, 1000, true));
         /** Enemy weapons*/
         weapons.add(new Item("Enemy Weap", 3, 14, true));
         return weapons;
