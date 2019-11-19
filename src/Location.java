@@ -40,8 +40,8 @@ public class Location {
     static Location roomQ = new Location("You're at the Armoury. You see a lot boxes and cargos loaded with sharp blades and fire arms. You may proceed north or south from here"); //Armoury (North-western part of the labyrinth)
     static Location roomR = new Location("You're at the Armoury. You see a lot boxes and cargos loaded with sharp blades and fire arms. North from here you see a room with a table and south from here you see a corridor"); //Armoury (North-western part of the labyrinth)
     static Location roomS = new Location("You're at the Armoury. You see a lot boxes and cargos loaded with sharp blades and fire arms. West from here you see a room with a table and east from here you see a corridor"); //Armoury (North-western part of the labyrinth)
-    static Location roomT = new Location("You're at the Armoury. You see a lot boxes and cargos loaded with sharp blades and fire arms. West from here you see a corridor leading deeper into the Armoury and east from here you see a corridor that seems to lead you deeper into the Sinister part of the labyrinth \n"); //Village
-    static Location roomU = new Location("You're at the Sinister part of the labyrinth. To your left you see a corridor leading into the Armoury and to right you see a corridor leading deeper into the Sinister part"); //Home town
+    static Location roomT = new Location("You're at the Armoury. You see a lot boxes and cargos loaded with sharp blades and fire arms. West from here you see a corridor leading deeper into the Armoury and east from here you see a corridor that seems to lead you deeper into the Sinister part of the labyrinth \n"); //Armoury (North-western part of the labyrinth)
+    static Location roomU = new Location("You're at the Sinister part of the labyrinth. To your left you see a corridor leading into the Armoury and to right you see a corridor leading deeper into the Sinister part"); //Sinister part (North-easter part of the labyrinth)
 
 
     @Override

@@ -26,7 +26,7 @@ public class Main {
             println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
             player.pickup(locations.start);
         }
-        
+
 
         gameLoop(player);
         if (player.getHp() > 0 ) {
