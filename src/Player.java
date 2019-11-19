@@ -155,7 +155,6 @@ public class Player extends Creature {
     public void movePlayer(Location location, String dir){
         if(location.dirExists(dir)) {
             if(location.stringToDir(dir)==Location.bossRoom){
-                Main.println("You see a Very Angry Man");
                 if(key){
                    this.currentLocation = location.stringToDir(dir);
                 }

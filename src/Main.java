@@ -22,9 +22,11 @@ public class Main {
         String name = "traveler";
         Player player = new Player(name, item);
         println("You wake up and find that you fallen down into some sort of labyrinth");
+        if (locations.start.item != item.generateAllItems().get(0)){
+            println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
+            player.pickup(locations.start);
+        }
 
-        println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
-        player.pickup(locations.start);
         //if (player.currentLocation == Location.roomWeap) {
         //    println("You see a " + locations.roomWeap.item.name + ". Press (Y) to pick it up!");
         //    locations.roomWeap.item = item2;
@@ -61,7 +63,7 @@ public class Main {
                     player.pickup(player.currentLocation);
                 } else if (player.currentLocation.potions > 0) {
                     // a room called potion room, which contain the mini boss nurse and x5 potions that can be picked up
-                    // each potions heals the players hit points up to 20. and they can't heal above the players max hp
+                    // each potions heals the players hit points up to by 10. and they can't heal above the players max hp
                     println("There's 5 potions in some crate. Want to pick it up? (Y)es or (N)o?");
                     player.pickup(Location.potionRoom);
                 }
