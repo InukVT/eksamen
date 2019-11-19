@@ -155,12 +155,12 @@ public class Player extends Creature {
     public void movePlayer(Location location, String dir){
         if(location.dirExists(dir)) {
             if(location.stringToDir(dir)==Location.bossRoom){
-                Main.println("You've encountered the dungeon!");
+                Main.println("You see a Very Angry Man");
                 if(key){
                    this.currentLocation = location.stringToDir(dir);
                 }
                 else {
-                    Main.println("You need the key to unlock the dungeon!");
+                    Main.println("You need some sort of key to gain access here");
                 }
             }else {
                 // TODO: Add enemy encounter logic here
