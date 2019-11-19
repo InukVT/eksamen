@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
 /** The player class
@@ -6,11 +5,9 @@ import java.util.Random;
 public class Player extends Creature {
     public int potions = 0;
     /** What the player carries */
-    private ArrayList<Item> inventory;
     private Boolean key = false;
 
     public Location currentLocation;
-    public Item currentWeapon;
 
 
     /** Create a new player
@@ -21,38 +18,16 @@ public class Player extends Creature {
 
     }
 
-    /** Player represented as a String
-     *  <p>
-     *  TODO: Find a better representation of player, like health
-     *
-     *  @return {@link Player}'s {@link #name}, as that represent the player the best
-     *
-     *  */
-    @Override
-    public String toString() {
-        return name;
-    }
-
-
-
-    /** Adds an item to the players inventory, if the player can handle the weight. Returns true if successfull, otherwise false.
-     *
-     * @param item a {@link Item} to be added to the players {@link #inventory}.
-     *
-     * @return <code>true</code> if the item added <code>false</code> if the item is too heavy for the user, and thus can't be added.
-     * */
-    public void appendInventory(Item item){
-            this.inventory.add(item);
-    }
-
-
-    // key bound functions
-    // y for pickup
-    // n to reject pickup
+    // Small function to take the item from location into players inventory
     public void pickup (Location location){
         char ctrl = input().charAt(0);
+        // Switch statements are better maintainable than if blocks, for this kind of iterations.
         switch (ctrl){
             case 'y':
+                // This could easily be a switch statement instead, we know the key is only true in the keyroom,
+                // but to show that we know about if else statements, we used if
+                // We move the item to the plater, to change players item value to the item and then the locations
+                // item value to null / zero.
                 if(location.key == true){
                     key = true;
                     location.key = false;
@@ -69,7 +44,7 @@ public class Player extends Creature {
                     location.item = null;
                 } else if (location == location.roomWeap) {
                     Main.println("You picked up the " + location.item.name);
-                        equip = location.item;
+                    equip = location.item;
                     location.item = null;
                 }
                 break;
@@ -80,6 +55,8 @@ public class Player extends Creature {
                 Main.println("Illegal move!");
         }
     }
+
+    // Becaue we use this twice, this is how we do it
     public String input(){
         Scanner scanner = new Scanner(System.in);
         // Stores the scanned string as all lowercase, to be case incensitive
