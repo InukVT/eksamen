@@ -24,8 +24,8 @@ public class Location {
     static Location roomL = new Location("(L)"); //Playground
     static Location roomM = new Location("(M)"); //Playground
     static Location roomN = new Location("(N)"); //Playground
-    static Location roomO = new Location("(O) You entered the playground"); //Playground
-    static Location roomP = new Location("(P) "); //Playground
+    static Location roomO = new Location("(O)"); //Playground
+    static Location roomP = new Location("(P) You entered the playground "); //Playground
     static Location roomQ = new Location("(Q)"); //Village
     static Location roomR = new Location("(R)"); //Village
     static Location roomS = new Location("(S))"); //Village

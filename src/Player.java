@@ -90,7 +90,7 @@ public class Player extends Creature {
 
     public void move() {
         if (potions > 0 && getHp() < 50) {
-            Main.println("Your HP is currently " + getHp() + ". Press (P) to use potions (+20 HP)");
+            Main.println("Your HP is currently " + getHp() + ". Press (P) to use potions (+10 HP)");
         }
         if (currentLocation.north != null) {
             Main.println("Press (N) to move north");
