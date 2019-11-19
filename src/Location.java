@@ -66,6 +66,7 @@ public class Location {
         return false;
     }
     public Location stringToDir(String dir){
+        // Evaluates dir over different cases, this could be replaced with enums with associated values.
         switch (dir) {
             case "north":
                 return north ;
