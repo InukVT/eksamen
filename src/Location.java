@@ -7,7 +7,7 @@ public class Location {
     static Location bossRoom = new Location("Moms house!"); //Home Town
     static Location potionRoom = new Location(" at the hospital!"); //Hospital
     static Location miniBossRoom = new Location("dads home"); //The other side
-    static Location roomWep = new Location("Weapon room"); //Village
+    static Location roomWeap = new Location("Weapon room"); //Village
     /** normal rooms */
     static Location roomA = new Location("(A) on the road. The road splits into two ways, which way you wanna go?"); //Road
     static Location roomB = new Location("(B )on the road. The road splits two ways, which way you wanna go?"); //Road
@@ -47,7 +47,7 @@ public class Location {
         this.potions = 0;
     }
     // Using ArrayList, so we can potentially have 1000 items in a room, no issue.
-    /** An array of all the items in the room */
+    /** An array of all the items in the labyrinth */
     public Item item;
     public Boolean key;
     public int potions;
@@ -134,9 +134,9 @@ public class Location {
         Location.roomQ.north = Location.roomR;
 
         Location.roomR.south = Location.roomQ;
-        Location.roomR.north = Location.roomWep;
+        Location.roomR.north = Location.roomWeap;
 
-        Location.roomS.west = Location.roomWep;
+        Location.roomS.west = Location.roomWeap;
         Location.roomS.east = Location.roomT;
 
         Location.roomT.west = Location.roomS;
@@ -154,13 +154,14 @@ public class Location {
         Location.keyRoom.east = Location.roomM;
         Location.keyRoom.north = Location.roomN;
 
-        Location.roomWep.south = Location.roomR;
-        Location.roomWep.east = Location.roomS;
+        Location.roomWeap.south = Location.roomR;
+        Location.roomWeap.east = Location.roomS;
 
         Location.bossRoom.east = Location.roomG;
 
         Location.keyRoom.key = true;
         Location.potionRoom.potions = 5;
+        Location.roomWeap.item = Item.generateAllItems().get(6);
 
         Location.bossRoom.enemy = Enemy.VeryAngryMan;
         Location.miniBossRoom.enemy = Enemy.AngryMan;
