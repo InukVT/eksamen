@@ -1,7 +1,8 @@
 import java.util.Random;
 
 public class Combat {
-    /** hit rate is a random number between 0 and the weapons maximum hit rate number*/
+    // hit rate is a random number between 0 and the weapons maximum hit rate number
+    // used to determine if the attacker hits.
     public int hitRate(Item item) {
 
         int hitRate;
