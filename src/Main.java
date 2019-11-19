@@ -1,10 +1,7 @@
 import java.util.Random;
 
-/*
-  Game class, this is where the game is run
- */
+ // Game class. This is where the game is run
 public class Main {
-
 
     public static void main(String[] args) {
         // Generates all default items
@@ -26,7 +23,6 @@ public class Main {
             println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
             player.pickup(locations.start);
         }
-        
 
         gameLoop(player);
         if (player.getHp() > 0 ) {
@@ -45,7 +41,6 @@ public class Main {
             // game
             if (player.currentLocation.enemy != null) {
                 if (player.currentLocation.enemy.getHp() > 0) {
-
                     combat.combatLoop(player, player.currentLocation.enemy);
                 }
             }

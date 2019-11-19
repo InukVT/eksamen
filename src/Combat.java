@@ -9,7 +9,6 @@ public class Combat {
         Random random = new Random();
 
         hitRate = random.nextInt(item.accuracy);
-
         return hitRate;
     }
 
@@ -56,7 +55,6 @@ public class Combat {
                     Main.println("I told you to choose an action, but now:");
             }
             hit(player, enemy);
-
         }
 
         if(player.getHp()>0) {
