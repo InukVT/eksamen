@@ -58,7 +58,7 @@ public class Main {
                 // below the pick up function allows the player to pick up the key
                 if (player.currentLocation.key == true) {
                     println("There's a key on the key hanger. Want to pick it up? (Y)es or (N)o?");
-                    player.pickup(Location.roomP);
+                    player.pickup(player.currentLocation);
                 } else if (player.currentLocation.potions > 0) {
                     // a room called potion room, which contain the mini boss nurse and x5 potions that can be picked up
                     // each potions heals the players hit points up to 20. and they can't heal above the players max hp

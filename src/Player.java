@@ -53,7 +53,7 @@ public class Player extends Creature {
         char ctrl = input().charAt(0);
         switch (ctrl){
             case 'y':
-                if(location == Location.roomP){
+                if(location.key == true){
                     key = true;
                     location.key = false;
                     Main.println("You picked up the key!");
