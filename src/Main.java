@@ -17,7 +17,7 @@ public class Main {
         // spawns the player at the starting point
         String name = "traveler";
         Player player = new Player(name, item);
-        println("Hello Traveler. Welcome to the city!");
+        println("Hello Traveler. Welcome to the city! Your Parents got kidnapped. VERY ANGRY MAN - KEY (FORTÆL KORT) -  VILLAGE? ");
 
         println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
         player.pickup(locations.start);

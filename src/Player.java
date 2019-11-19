@@ -62,7 +62,7 @@ public class Player extends Creature {
                     location.potions = 0;
                     Main.println("You picked up the potions!");
                 } else if (location == location.start) {
-                    Main.println("You picked up the weapon!");
+                    Main.println("You picked up the weapon! Go find the key! \nChose a way you wanna go:");
                     if(equip == equip.weapons.get(0)){
                         equip = location.item;
                     }

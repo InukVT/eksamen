@@ -2,17 +2,17 @@ public class Location {
     /** Name of location */
     public String name;
     /** special rooms */
-    static Location start = new Location("the bus stop");
+    static Location start = new Location("in the city");
     static Location keyRoom= new Location("key room!"); //Playground
     static Location bossRoom = new Location("Moms house!"); //Home Town
-    static Location potionRoom = new Location("the hospital!"); //Hospital
+    static Location potionRoom = new Location(" at the hospital!"); //Hospital
     static Location miniBossRoom = new Location("dads home"); //The other side
     static Location roomWep = new Location("Weapon room"); //Village
     /** normal rooms */
-    static Location roomA = new Location("(A) On the road. You can go two ways, which way you wanna go?"); //Road
-    static Location roomB = new Location("(B)"); //Road
-    static Location roomC = new Location("(C)"); //Home town
-    static Location roomD = new Location("(D)"); //Home town
+    static Location roomA = new Location("(A) on the road. The road splits into two ways, which way you wanna go?"); //Road
+    static Location roomB = new Location("(B )on the road. The road splits two ways, which way you wanna go?"); //Road
+    static Location roomC = new Location("(C) seeing your hometown in the view!"); //Home town
+    static Location roomD = new Location("(D) close the city sign. If you go south you will get to the hospital. If you go north you getting to the town\" "); //Home town
     static Location roomE = new Location("(E)"); //Hospital
     static Location roomF = new Location("(F)"); //Home town
     static Location roomG = new Location("(G)"); //Home town

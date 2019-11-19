@@ -42,7 +42,7 @@ public class Combat {
     /** every combat starts the program goes through the entire loop below, and returns back to start and stops
      * this makes the combat non-automated*/
     public void combatLoop(Player player,Enemy enemy){
-        Main.println(String.format("You´ve encountered %s.", enemy.name));
+        Main.println(String.format("Fuck! You´ve encountered %s.", enemy.name));
        // Main.println(String.format("You've encountered %s, they have %d health, and you have %d. What are you going to do?", enemy.getName(), enemy.getHp(), player.getHp()));
         while (player.getHp() > 0 && enemy.getHp() > 0){
             Main.println("you have " + player.getHp() + " HP! | " + enemy.getName() + " have " + enemy.getHp() + " HP!");
