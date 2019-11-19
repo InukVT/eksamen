@@ -3,10 +3,10 @@ public class Creature {
     // Equipped weapon for use in combat
     public Item equip;
 
-    //* Name of Creature
+    // Name of Creature
     public String name;
 
-    //* Creatures HP
+    // Creatures HP
     private int hp;
 
     public void hp(int more){
@@ -19,7 +19,7 @@ public class Creature {
         this.equip = equip;
     }
 
-    //* @return {@link #hp}
+    // Returns the health for the creature
     public int getHp() {
         return hp;
     }
