@@ -9,13 +9,14 @@ public class Location {
     static Location miniBossRoom = new Location("dads home"); //The other side
     static Location roomWeap = new Location("Weapon room"); //Village
     /** normal rooms */
+    // TODO ændre A og B (Går kun 1 vej
     static Location roomA = new Location("(A) on the road. The road splits into two ways, which way you wanna go?"); //Road
     static Location roomB = new Location("(B )on the road. The road splits two ways, which way you wanna go?"); //Road
     static Location roomC = new Location("(C) seeing your hometown in the view!"); //Home town
     static Location roomD = new Location("(D) close the city sign. If you go south you will get to the hospital. If you go north you getting to the town\" "); //Home town
-    static Location roomE = new Location("(E)"); //Hospital
-    static Location roomF = new Location("(F)"); //Home town
-    static Location roomG = new Location("(G)"); //Home town
+    static Location roomE = new Location("(E) on the hospitals parking lot "); //Hospital
+    static Location roomF = new Location("(F) now in the town!"); //Home town
+    static Location roomG = new Location("(G) If you got the key, find the kidnappers house on the right. Else try go back or left\""); //Home town
     static Location roomH = new Location("(H)"); //Road
     static Location roomI = new Location("(I)"); //Hospital
     static Location roomJ = new Location("(J)"); //The other side
@@ -23,8 +24,8 @@ public class Location {
     static Location roomL = new Location("(L)"); //Playground
     static Location roomM = new Location("(M)"); //Playground
     static Location roomN = new Location("(N)"); //Playground
-    static Location roomO = new Location("(O)"); //Playground
-    static Location roomP = new Location("(P)"); //Playground
+    static Location roomO = new Location("(O) You entered the playground"); //Playground
+    static Location roomP = new Location("(P) "); //Playground
     static Location roomQ = new Location("(Q)"); //Village
     static Location roomR = new Location("(R)"); //Village
     static Location roomS = new Location("(S))"); //Village

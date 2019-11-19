@@ -167,7 +167,7 @@ public class Player extends Creature {
             }else {
                 // TODO: Add enemy encounter logic here
                 this.currentLocation = location.stringToDir(dir);
-                Main.println("You are  " + this.currentLocation.toString());
+                Main.println("" + this.currentLocation.toString());
                 int encounter = new Random().nextInt(5);
                 if (currentLocation != location.bossRoom || currentLocation != location.miniBossRoom || currentLocation != location.potionRoom ) {
                     if (encounter == 3) {

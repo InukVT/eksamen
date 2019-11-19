@@ -1,6 +1,8 @@
 import java.util.Random;
 
-/** Game class, this is where the game is run */
+/**
+ * Game class, this is where the game is run
+ */
 public class Main {
 
 
@@ -19,7 +21,7 @@ public class Main {
         // spawns the player at the starting point
         String name = "traveler";
         Player player = new Player(name, item);
-        println("Hello Traveler. Welcome to the city! Your Parents got kidnapped. VERY ANGRY MAN - KEY (FORTÆL KORT) -  VILLAGE? ");
+        println("Hello Traveler. Welcome to the city! Your Parents got kidnapped. Go to your hometown and find them, but be careful!");
 
         println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
         player.pickup(locations.start);
@@ -37,21 +39,21 @@ public class Main {
         }
     }
 
-    private static void gameLoop(Player player){
+    private static void gameLoop(Player player) {
         Combat combat = new Combat();
         // as long as the players hp is above 0 the game runs
         // if the players hp is is or below 0, the program spits out "game over" and the program stops
         // Very Angry Man is the last boss of the game, and his hp hits 0, it's game clear. The program spits out "game over" and the program stops
-        while (player.getHp() > 0 && Enemy.VeryAngryMan.getHp() > 0){
+        while (player.getHp() > 0 && Enemy.VeryAngryMan.getHp() > 0) {
             // game
-            if(player.currentLocation.enemy != null){
-                if (player.currentLocation.enemy.getHp() > 0){
+            if (player.currentLocation.enemy != null) {
+                if (player.currentLocation.enemy.getHp() > 0) {
 
                     combat.combatLoop(player, player.currentLocation.enemy);
                 }
             }
             // Because the while loop doesn't stop exactly when player dies
-            if (player.getHp()>0&&Enemy.VeryAngryMan.getHp() > 0) {
+            if (player.getHp() > 0 && Enemy.VeryAngryMan.getHp() > 0) {
                 // the Very Angry Man's room is locked. as long as the key ain't obtained, this room can't be accessed
                 // below the pick up function allows the player to pick up the key
                 if (player.currentLocation.key == true) {
@@ -71,7 +73,7 @@ public class Main {
         }
     }
 
-    public static void println(String toPrint){
+    public static void println(String toPrint) {
         System.out.println(toPrint);
     }
 }
