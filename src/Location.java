@@ -2,39 +2,38 @@ public class Location {
     /** Name of location */
     public String name;
     /** special rooms */
-    static Location start = new Location("in the city");
+    static Location start = new Location("You're at the start. Way above you in the celling you see the hole where you fell through");
     // + you picked up the key
-    static Location keyRoom= new Location("You entered the cave"); //Playground
-    static Location bossRoom = new Location("You entered the kidnappers building!"); //Home Town
-    static Location potionRoom = new Location(" at the hospital!"); //Hospital
-    static Location miniBossRoom = new Location("It´s totally dark."); //The other side
+    static Location keyRoom= new Location("You're at the main hall of the Keyhold"); //Keyhold
+    static Location bossRoom = new Location("You're at the room of owner of this labyrinth. Prepare yourself"); //Sinister part
+    static Location potionRoom = new Location("You're in the supply room. You may find something that may help you here"); //Supply room
+    static Location miniBossRoom = new Location("You're at the HQ. And you see a Angry Man. You nw understand the earlier shouting"); //Barracks
     // TODO Pickup
-    static Location roomWeap = new Location("You entered the armory!"); //Village
+    static Location roomWeap = new Location("You entered the armory!"); //Armoury
     /** normal rooms */
     // TODO ændre A og B (Går kun 1 vej)
             //TODO Kaiyin ret alt!
-    static Location roomA = new Location("(A) on the road. The road splits into two ways, which way you wanna go?"); //Road
-    static Location roomB = new Location("(B )on the road. The road splits two ways, which way you wanna go?"); //Road
-    static Location roomC = new Location("(C) seeing your hometown in the view!"); //Home town
-    static Location roomD = new Location("(D) close the city sign. If you go south you will get to the hospital. If you go north you getting to the town\" "); //Home town
-    static Location roomE = new Location("(E) You are on the hospitals parking lot. At the south there`s a forest and at west you hit the road "); //Hospital
-    static Location roomF = new Location("(F) You are now in your hometown!"); //Home town
-    static Location roomG = new Location("(G) If you got the key, go find the kidnappers house on the right. Else try go back or left\""); //Home town
-    static Location roomH = new Location("(H) You are on the road, follow the road or go back!"); //Road
-    static Location roomI = new Location("(I)You are on the road, follow the road or go back!");
-    static Location roomJ = new Location("(J) The forest looks scary. Go north to run back, else go south to go deeper into the forest!"); //The other side
-    static Location roomK = new Location("(K) The forest looks scary. GO east to go further into the forest, or go west to leave!"); //The other side
-    static Location roomL = new Location("(L) You are in the middle of the forest! Try a way!"); //Playground
-    static Location roomM = new Location("(M) You are in the forest, it looks scary. go west for entering med cave or east for to go further into the forest!"); //Playground
-    static Location roomN = new Location("(N) To the south, you see some sort of cave! Check it out! "); //Playground
-    static Location roomO = new Location("(O) You see some kids playing. Go south to check it out!"); //Playground
-    // + back
-    static Location roomP = new Location("(P) You entered the playground. You can go two ways. Choose one wisely"); //Playground
-    static Location roomQ = new Location("(Q) Far far away you see an armory. Go north to check it out, or go back"); //Village
-    static Location roomR = new Location("(R) Are you sure u wanna go? If yes, keep going"); //Village
-    static Location roomS = new Location("(S) ...."); //Village
-    static Location roomT = new Location("(T) You are at the ......"); //Village
-    static Location roomU = new Location("(U) You are in the middle of your home town. Try go east or west!"); //Home town
+    static Location roomA = new Location("You're still in the labyrinth. You see nothing to your left or in front you, so your only options to go south or go east"); //Armoury (North-western part of the labyrinth)
+    static Location roomB = new Location("You're still in the labyrinth. You see nothing in front of you nor behind, so your only options are to go west or east"); //Armoury (North-western part of the labyrinth)
+    static Location roomC = new Location("You're at the sinister part of the labyrinth. Your options are to west or east"); //Sinister part (North-eastern part of the labyrinth)
+    static Location roomD = new Location("You're still at the sinister part of the labyrinth. You see a supply room to your south and a corridor, that leads you deeper into the labyrinth, in front of you\" "); //Sinister part (North-easter part of the labyrinth)
+    static Location roomE = new Location("You're at the barracks. You see a corridor west of you, a corridor south of you and to your front you see a supply room"); //Barracks (South-western part of the labyrinth)
+    static Location roomF = new Location("You're deep within the sinister part of the labyrinth. You see nothing adjacent to you, but see a corridor south and north from where you're standing!"); //Sinister part (North-eastern part of the labyrinth)
+    static Location roomG = new Location("You're at the deepest part of the labyrinth. You see a corridor leading away from here, to your west and a giant red glowing gate to your east. And it looks like you need some sort of key to access the room. Else try go back or left\""); //Home town
+    static Location roomH = new Location("You're somewhere...? Nothing seems of interest here.. But you do see a corridor to your north and to your west"); //just a corridor
+    static Location roomI = new Location("You're at the barracks. Nothing of interests here other than two corridors. One to your east and one to your west");//ordinary corridor
+    static Location roomJ = new Location("You're near the barracks HQ. You begin to hear someone shouting. There's a corridor north from here. South from here you see the barracks HQ where the shouting is coming from"); //Barracks (South-western part of the labyrinth)
+    static Location roomK = new Location("You're near the barracks HQ. You begin to hear someone shouting. There's a corridor leading away from the barracks west from here. And east from here you see the barracks HQ where the shouting is coming from"); //Barracks (South-western part of the labyrinth)
+    static Location roomL = new Location("You're at just another corridor of the Keyhold. You see a corridor to your right and to your left"); //Keyhold (South-western part of the labyrinth)
+    static Location roomM = new Location("You're still at the Keyhold. To your left you see key hangers, you might find a key that may come in handy later. And to your right you see a corridor"); //Keyhold (South-western part of the labyrinth)
+    static Location roomN = new Location("You're still at the Keyhold. To your south you see key hangers, you might find a key that may come in handy later. And north from here you see a corridor"); //Keyhold (South-western part of the labyrinth)
+    static Location roomO = new Location("You're at the Keyhold. You're sweating a little bit, since you can hear goons roaming around. You see two corridors one south and one north from here");
+    static Location roomP = new Location("You're at the start of the Keyhold. You get a little bit anxious because you feel something is roaming around. From here you can go north or south"); //Keyhold (South-western part of the labyrinth)
+    static Location roomQ = new Location("You're at the Armoury. You see a lot boxes and cargos loaded with sharp blades and fire arms. You may proceed north or south from here"); //Armoury (North-western part of the labyrinth)
+    static Location roomR = new Location("You're at the Armoury. You see a lot boxes and cargos loaded with sharp blades and fire arms. North from here you see a room with a table and south from here you see a corridor"); //Armoury (North-western part of the labyrinth)
+    static Location roomS = new Location("You're at the Armoury. You see a lot boxes and cargos loaded with sharp blades and fire arms. West from here you see a room with a table and east from here you see a corridor"); //Armoury (North-western part of the labyrinth)
+    static Location roomT = new Location("You're at the Armoury. You see a lot boxes and cargos loaded with sharp blades and fire arms. West from here you see a corridor leading deeper into the Armoury and east from here you see a corridor that seems to lead you deeper into the Sinister part of the labyrinth \n"); //Village
+    static Location roomU = new Location("You're at the Sinister part of the labyrinth. To your left you see a corridor leading into the Armoury and to right you see a corridor leading deeper into the Sinister part"); //Home town
 
 
     @Override

@@ -21,7 +21,7 @@ public class Main {
         // spawns the player at the starting point
         String name = "traveler";
         Player player = new Player(name, item);
-        println("Hello Traveler. Welcome to the city! Your Parents got kidnapped. Go to your hometown and find them, but remember the key! Be careful!");
+        println("You wake up and find that you fallen down into some sort of labyrinth");
 
         println("You see a " + locations.start.item.name + ". Press (Y) to pick it up!");
         player.pickup(locations.start);
@@ -57,12 +57,12 @@ public class Main {
                 // the Very Angry Man's room is locked. as long as the key ain't obtained, this room can't be accessed
                 // below the pick up function allows the player to pick up the key
                 if (player.currentLocation.key == true) {
-                    println("There's a key on the ground. Want to pick it up? (Y)es or (N)o?");
+                    println("There's a key on the key hanger. Want to pick it up? (Y)es or (N)o?");
                     player.pickup(Location.roomP);
                 } else if (player.currentLocation.potions > 0) {
                     // a room called potion room, which contain the mini boss nurse and x5 potions that can be picked up
                     // each potions heals the players hit points up to 20. and they can't heal above the players max hp
-                    println("There's 5 potions on the ground. Want to pick it up? (Y)es or (N)o?");
+                    println("There's 5 potions in some crate. Want to pick it up? (Y)es or (N)o?");
                     player.pickup(Location.potionRoom);
                 }
                 player.move();
