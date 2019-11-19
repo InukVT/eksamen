@@ -67,9 +67,6 @@ public class Main {
                 }
                 player.move();
             }
-            if (Enemy.VeryAngryMan.getHp() <= 0) {
-                break;
-            }
         }
     }
 
