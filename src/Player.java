@@ -1,4 +1,4 @@
-// Created by Andreas Work, Bastian Inuk Christensen, Kaiyin Yang
+// Made by Andreas Work <66712>, Bastian Inuk Christensen <66523>,  Kaiyin Yang <66514>
 
 import java.util.Scanner;
 import java.util.Random;

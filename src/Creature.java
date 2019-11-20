@@ -1,4 +1,4 @@
-// Made by Andreas Work, Bastian Inuk Christensen,  Kaiyin Yang
+// Made by Andreas Work <66712>, Bastian Inuk Christensen <66523>,  Kaiyin Yang <66514>
 
 // Generic creatures class used by Player and Enemy
 public class Creature {
