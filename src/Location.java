@@ -1,3 +1,5 @@
+// Created by Andreas Work, Bastian Inuk Christensen, Kaiyin Yang
+
 public class Location {
     // Description of location
     public String description;

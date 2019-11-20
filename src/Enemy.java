@@ -1,3 +1,5 @@
+// Created by Andreas Work, Bastian Inuk Christensen, Kaiyin Yang
+
 // Enemy class
 public class Enemy extends Creature {
     public Enemy(String name, int hp, Item equip) {

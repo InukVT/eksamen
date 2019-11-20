@@ -1,3 +1,5 @@
+// Created by Andreas Work, Bastian Inuk Christensen, Kaiyin Yang
+
 import java.util.ArrayList;
 
 public class Item {

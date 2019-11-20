@@ -1,3 +1,5 @@
+// Made by Andreas Work, Bastian Inuk Christensen,  Kaiyin Yang
+
 // Generic creatures class used by Player and Enemy
 public class Creature {
     // Equipped weapon for use in combat
